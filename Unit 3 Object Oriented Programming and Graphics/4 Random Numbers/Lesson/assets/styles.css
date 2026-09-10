@@ -1,0 +1,27 @@
+.basic-rng {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.wheel-of-fortune {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.wheel-of-fortune #wheel {
+    border: none;
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.wheel-of-fortune #wheel:hover {
+    background-color: #3e3e42d0;
+}

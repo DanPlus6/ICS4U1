@@ -1,0 +1,337 @@
+Array Algorithms Part 3
+Question 1 Problem: How does one shift ALL elements in an array 1 index to the left, leaving the last element null? 
+For example: The array
+A
+B
+C
+D
+E
+F
+
+becomes
+B
+C
+D
+E
+F
+null
+
+
+Create an IPO+S Chart to analyse this problem.
+Input:
+Input array
+
+Processing:
+Initialize working array to length of input array
+
+Iterate through the working array starting at second element until end of array and for each index, set the working array at this index-1 to the value of the input array at the current index
+
+Then set last element in working array to NULL
+
+Output:
+A newly shifted array
+
+Storage:
+A second working array
+
+
+Write pseudocode for a function named shiftArrayLeft() that will solve this problem.
+```
+FUNCTION shiftArrayLeft(arr)
+    SET workingArr = new Array(arr.length);
+    FOR i from 1 to arr.length-1
+        SET workingArr[i-1] = arr[i]
+    NEXT i
+    SET workingArr[arr.length-1] = NULL
+
+    RETURN workingArr
+END FUNCTION
+```
+
+
+Question 2 Problem: How does one delete a given element in an array, which also resizes the array and leaves no gaps? 
+This algorithm must return an array, even if there are no changes because the element is not found.
+For example: When the element at index 2 is deleted, the array
+0
+1
+2
+3
+4
+5
+A
+B
+C
+D
+E
+F
+
+Becomes
+0
+1
+2
+3
+4
+5
+A
+B
+D
+E
+F
+null
+
+Create an IPO+S Chart to analyse this problem.
+Input:
+An input array
+The value of desired element to be deleted
+
+Processing:
+Initialize a boolean flag to false
+Initialize an empty array of length equal to input array length
+Initialize iterator to 0
+
+Iterate through array and copy input array element at current index to working array at current index if current element 
+does not equal deletion value, if so, set the boolean flag to true and break
+
+Iterate throguh array at iterator+1 and copy input array element at current index to working array at current index-1
+
+If boolean flag is false, pop last element of array
+
+Output:
+Our storage/working array with element deleted
+
+Storage:
+A boolean flag to track if deletion value is found
+A variable to store index/iterator for array traversal
+A copy of input array -- our storage/working array
+
+
+Write pseudocode for a function named deleteElement() that will solve this problem.
+
+```
+FUNCTION deleteElement(arr, val) 
+    SET found = false
+    SET wArr = new Array(arr.length+1)
+
+    SET i = 0
+    FOR i to arr.length-1
+        IF arr[i] != val THEN
+            SET wArr[i] = arr[i]
+        ELSE
+            SET found = true
+            BREAK
+        END IF    
+    NEXT i
+
+    FOR i from i+1 to arr.length-1
+        SET wArr[i-1] = arr[i]
+    NEXT i
+
+    IF !found THEN
+        COMPUTE wArr.pop()
+    END IF
+
+    RETURN wArr;
+END FUNCTION
+```
+
+
+EXERCISES
+Question 1 of 34: How does one shift the element in an array one index to the right, leaving the first element null? Since there is no change in array size, this is an in-place algorithm and the function does not a new array.
+For example: When the array has a right shift
+0
+1
+2
+3
+4
+5
+A
+B
+C
+D
+E
+F
+
+Becomes
+0
+1
+2
+3
+4
+5
+Null
+A
+B
+D
+E
+F
+
+Create an IPO+S Chart to analyse this problem.
+Input
+Processing
+Output
+Storage
+
+
+
+
+
+
+
+
+
+
+Write pseudocode for a function named shiftArrayRight() that will solve this problem.
+
+
+
+
+Question 2 of 34: How does one insert a value at a given index in an array? Since there is a change in array size, the function must return a new array.
+For example: When the value Z is inserted at index 2, the array
+0
+1
+2
+3
+4
+5
+A
+B
+C
+D
+E
+F
+
+The algorithm returns
+0
+1
+2
+3
+4
+5
+6
+A
+B
+Z
+C
+D
+E
+F
+
+Create an IPO+S Chart to analyse this problem.
+Input
+Processing
+Output
+Storage
+
+
+
+
+
+
+
+
+
+
+Write pseudocode for a function named insertElement() that will solve this problem.
+
+
+
+
+Question 3 of 34: How does one insert a value into sorted position in a sorted number array? 
+For example: When the value 123 is inserted in the array
+0
+1
+2
+3
+4
+5
+4
+8
+16
+32
+64
+128
+
+The algorithm returns
+0
+1
+2
+3
+4
+5
+6
+4
+8
+16
+32
+64
+123
+128
+
+Create an IPO+S Chart to analyse this problem.
+Input
+Processing
+Output
+Storage
+
+
+
+
+
+
+
+
+
+
+Write pseudocode for a function named insertElementInSortedArray() that will solve this problem.
+
+
+
+
+Question 4 of 4: How does one delete a given element in a sorted array, which also resizes the array and leaves no gaps? 
+For example: delete 16 from this array
+0
+1
+2
+3
+4
+5
+4
+8
+16
+32
+64
+128
+
+Should give 
+0
+1
+2
+3
+4
+4
+8
+32
+64
+128
+
+
+Create an IPO+S Chart to analyse this problem.
+Input
+Processing
+Output
+Storage
+
+
+
+
+
+
+
+
+
+
+Write pseudocode for a function named deleteSortedElement() that will solve this problem.
+
+
+
+

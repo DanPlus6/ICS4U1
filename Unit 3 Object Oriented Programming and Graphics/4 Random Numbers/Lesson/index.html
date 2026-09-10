@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/styles.css">
+
+    <title>Random Number</title>
+</head>
+<body>
+    <div class="basic-rng">
+        <p id="rng-output"></p>
+        <div class="basic-rng-buttons">
+            <button onclick="printRandom1To6()">Random [1,6]</button>
+            <button onclick="printRandomMinus50To50()">Random [-50,-50]</button>
+            <button onclick="printRandomGreeting()">Random Greeting</button>
+        </div>
+    </div>
+
+    <div class="wheel-of-fortune">
+        <button id="wheel" onclick="spinPrizeWheel()">
+            <img alt="Spin the wheel!" src="assets/img/wheel.png">
+        </button>
+        <p id="wheel-output"></p>
+    </div>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>

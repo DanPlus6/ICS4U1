@@ -1,0 +1,5 @@
+The explosion of artificial intelligence has drastically increased the energy demands of computing infrastructure.  According to recent statistics, global data center electricity consumption reached approximately 415 TWh in 2024 (~1.5% of total global electricity use) and the IEA projects this could exceed 500 TWh by 2026.
+
+Short-term impacts include immediate strain on local electrical grids, which drives up energy prices and increases the risk of rolling blackouts in tech-heavy regions. Long-term impacts involve a prolonged reliance on fossil fuels to meet this surging demand, heavily hindering global net-zero emission goals.
+
+The impact on human society manifests as higher utility bills for everyday consumers and intense resource competition. Meanwhile, the impact on Earth is severe: beyond massive greenhouse gas emissions, hyperscale data centers consume billions of gallons of freshwater annually for server cooling, depleting local water ecosystems.

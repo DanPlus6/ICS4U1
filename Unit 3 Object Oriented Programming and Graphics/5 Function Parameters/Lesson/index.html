@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Function Parameters</title>
+</head>
+<body onload="start()">
+    <h1 id="printer1"></h1>
+    <h2 id="printer2"></h2>
+
+    <input id="name-input">
+    <button onclick="sayHello(document.getElementById('name-input').value)">Hello!</button>
+
+    <button onclick="makeRandomInt(1,100)">Print Random Integer in [1,100]</button>
+    <button onclick="roundp(3.1415926, 3)">Round 3.1415926 to 3 decimal places</button>
+    <button onclick="calcHypotenuse(3,4)">Get Hypotenuse if `a` is 3 and `b` is 4</button>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+h1 {
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    gap: 20px;
+
+    border-radius: 50px;
+    padding: 14px 16px 14px 16px;
+    margin: 0 auto;
+    margin-top: 10px;
+
+    background-color: #111111;
+}
+
+.navbar button {
+    background: none;
+    color: white;
+    border-color: transparent;
+}
+
+
+.navbar button:hover {
+    text-decoration: underline;
+}
+
+.navbar button:active {
+    scale: 1.1;
+}
+
+
+.profile {
+    margin: 0 auto;
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.profile .stats {
+    align-items: center;
+    justify-content: center;
+
+    margin-left: 45px;
+
+    word-break: break-all;
+    max-width: 550px;
+}
+
+
+#btn-logoff {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    
+    background-color: red;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#btn-logoff:hover {
+    background-color: #555;
+}
+

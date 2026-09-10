@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/styles.css"/>
+
+    <title>Meet Your Match!</title>
+</head>
+<body>
+    <h1>Meet Your Match!</h1>
+    <div class="navbar">
+        <button id="btn_spiderman" onclick="prof_spiderman()">Spider-man</button>
+        <button id="btn_superman" onclick="prof_superman()">Superman</button>
+        <button id="btn_batman" onclick="prof_batman()">Batman</button>
+    </div>
+
+    <div class="profile" id="profile_container" style="visibility: hidden;">
+        <img id="st_img"/>
+        <div class="stats">
+            <p>First Name: <span id="st_fname"></span></p>
+            <p>Last Name: <span id="st_lname"></span></p>
+            <p>Hair Color: <span id="st_hair"></span></p>
+            <p>Eye Color: <span id="st_eye"></span></p>
+            <p>Age: <span id="st_age"></span></p>
+            <p>Description: <span id="st_desc"></span></p>
+        </div>
+    </div>
+
+    <button id="btn-logoff" style="visibility: hidden;" onclick="logoff()">Log Off</button>
+
+    <!-- Lesson learned the hard way, always import script last or else targets/references will be null -->
+    <script src="assets/script/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,223 @@
+:root {
+    --navy:      #0b1c3a;
+    --navy-deep: #07111f;
+    --navy-mid:  #162d52;
+    --gold:      #f6ae2d;
+    --gold-dark: #c88a1a;
+    --muted:     rgba(255,255,255,0.4);
+    --line:      rgba(255,255,255,0.07);
+    --font-disp: 'Bebas Neue', sans-serif;
+    --font-head: 'Montserrat', sans-serif;
+    --font-body: 'DM Sans', sans-serif;
+}
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: var(--font-body);
+    background: var(--navy-deep);
+    color: white;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 24px;
+    overflow-x: hidden;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background:
+    radial-gradient(ellipse 60% 50% at 50% 60%, rgba(246,174,45,0.07) 0%, transparent 70%),
+    radial-gradient(ellipse 80% 60% at 50% 100%, rgba(11,28,58,0.9) 0%, transparent 80%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+main {
+    position: relative;
+    z-index: 1;
+    width: min(100%, 1280px);
+    min-width: 0;
+}
+
+h1, h2, h3, p, li, a, span, div {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.page-panel {
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    background: rgba(11,28,58,0.74);
+    box-shadow: 0 18px 56px rgba(0,0,0,0.24);
+}
+
+.page-header {
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 28px;
+    background: linear-gradient(135deg, rgba(22,45,82,0.92), rgba(7,17,31,0.92));
+    box-shadow: 0 22px 70px rgba(0,0,0,0.28);
+}
+
+.eyebrow {
+    margin-bottom: 8px;
+    color: var(--gold);
+    font-family: var(--font-head);
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0;
+    text-transform: uppercase;
+}
+
+.page-header h1 {
+    margin-bottom: 10px;
+    font-family: var(--font-head);
+    font-size: 3.25rem;
+    line-height: 1;
+}
+
+.intro {
+    max-width: 680px;
+    color: var(--muted);
+    line-height: 1.7;
+}
+
+input,
+button {
+    min-height: 44px;
+    border-radius: 8px;
+    font: inherit;
+}
+
+input {
+    width: 100%;
+    border: 1px solid rgba(255,255,255,0.12);
+    padding: 11px 13px;
+    background: rgba(255,255,255,0.08);
+    color: white;
+    outline: none;
+}
+
+input::placeholder {
+    color: rgba(255,255,255,0.46);
+}
+
+input:focus {
+    border-color: var(--gold);
+    box-shadow: 0 0 0 3px rgba(246,174,45,0.16);
+    background: rgba(255,255,255,0.11);
+}
+
+button {
+    border: 0;
+    padding: 11px 18px;
+    background: var(--gold);
+    color: var(--navy);
+    font-family: var(--font-head);
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.18s, transform 0.12s;
+}
+
+button:hover {
+    background: var(--gold-dark);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+button.secondary {
+    background: transparent;
+    color: white;
+    border: 1px solid rgba(255,255,255,0.22);
+}
+
+button.secondary:hover {
+    border-color: var(--gold);
+    color: var(--gold);
+    background: rgba(255,255,255,0.04);
+}
+
+button.ghost {
+    background: transparent;
+    color: var(--gold);
+    border: 1px solid rgba(246,174,45,0.44);
+}
+
+button.ghost:hover {
+    background: rgba(246,174,45,0.12);
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 18px;
+    background: rgba(7,17,31,0.84);
+}
+
+li[contenteditable="true"] {
+    min-height: 28px;
+    border-radius: 6px;
+    padding: 4px 6px;
+    color: rgba(255,255,255,0.82);
+    line-height: 1.5;
+    outline: none;
+    cursor: text;
+}
+
+li[contenteditable="true"]:focus {
+    background: rgba(255,255,255,0.08);
+    box-shadow: 0 0 0 2px rgba(246,174,45,0.22);
+}
+
+li[contenteditable="true"]:empty::before {
+    color: rgba(255,255,255,0.38);
+    content: "Click to type";
+}
+
+.home-button {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--gold);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    
+    transition: all 0.3s ease;
+}
+
+.home-button img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.home-button:hover {
+    transform: scale(1.2);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+.home-button:active {
+    transform: scale(0.8);
+}

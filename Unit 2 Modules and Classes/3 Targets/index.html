@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puzzle</title>
+</head>
+<body onload="start()">
+    <h1>Guess the person!</h1>
+
+    <div>
+        <p id="clue1"></p>
+        <button id="clueButton1" onclick="revealClue1()">Reveal Clue 1</button>
+    </div>
+
+    <div>
+        <p id="clue2"></p>
+        <button id="clueButton2" onclick="revealClue2()">Reveal Clue 2</button>
+    </div>
+
+    <div>
+        <p id="clue3"></p>
+        <button id="clueButton3" onclick="revealClue3()">Reveal Clue 3</button>
+    </div>
+
+    <div>
+        <p id="clue4"></p>
+        <button id="clueButton4" onclick="revealClue4()">Reveal Clue 4</button>
+    </div>
+
+    <div>
+        <p id="clue5"></p>
+        <button id="clueButton5" onclick="revealClue5()">Reveal Clue 5</button>
+    </div>
+
+    <div>
+        <p>
+            <img id="clue-image" hidden=true src="bruce.jpeg">
+            <button id="clue-img-button" onclick="revealClueImage()">Reveal Clue Image</button>
+        </p>
+    </div>
+    
+    <div>
+        <h1 id="answer"></h1>
+        <button id="ans-button" onclick="revealAnswer()">Reveal The Answer</button>
+    </div>
+
+    <script src="clues.js"></script>
+</body>
+</html>

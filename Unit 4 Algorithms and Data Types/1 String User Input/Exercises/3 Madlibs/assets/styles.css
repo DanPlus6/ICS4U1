@@ -1,0 +1,34 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+.input-field {
+    display: flex;
+    margin: 5px 5px 5px 5px;
+    align-items: center;
+}
+
+.input-field label {
+    margin-right: 10px;
+}
+
+button {
+    margin: 5px;
+}
+
+#output-field {
+    visibility: hidden;
+
+    margin-top: 10px;
+    
+    width: 300px;
+    height: auto;
+
+    padding: 10px;
+    border: 2px solid white;
+}

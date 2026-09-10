@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" href="assets/img/icon.png">
+                    
+    <link rel="stylesheet" href="assets/styles.css">
+
+    <title>Environment & Human Health</title>
+</head>
+<body>
+    <!-- Heading -->
+    <div class="heading">
+        <h1>Computer Technologies Effects on Environment & Human Health</h1>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="nav-bar">
+        <div class="nav-item">
+            <button class="nav-parent">Negative Effects of Computer Tech</button>
+            <div class="nav-dropdown">
+                <button class="nav-child" id="1" onclick="display(this);">Negative Environmental Effects of Computer Technologies</button>
+                <button class="nav-child" id="2" onclick="display(this);">Negative Human Health Effects of Computer Technologies</button>
+            </div>
+        </div>
+ 
+        <div class="nav-item">
+            <button class="nav-parent">Mitigation of Computer Tech Impacts</button>
+            <div class="nav-dropdown">
+                <button class="nav-child" id="3" onclick="display(this);">Computer Use Policy Mitigating Environmental Impact</button>
+                <button class="nav-child" id="4" onclick="display(this);">Computer Use Policy Mitigating Human Health Impact</button>
+                <button class="nav-child" id="5" onclick="display(this);">External Resources Mitigating Computer Technologies Impacts</button>
+            </div>
+        </div>
+ 
+        <div class="nav-item">
+            <button class="nav-parent">Positive Effects of Computer Tech</button>
+            <div class="nav-dropdown">
+                <button class="nav-child" id="6" onclick="display(this);">Computer Technologies Reducing Resource Usage</button>
+            </div>
+        </div>
+    </nav>
+ 
+    <!-- Info nothing burger -->
+    <div class="info-container">
+        <h2 id="info-heading"></h2>
+        <div class="info-section">
+            <h3 id="section-heading"></h3>
+            <p id="section-body"></p>
+        </div>
+        <div class="section-nav">
+            <button id="btn-prev" class="section-nav-btn" onclick="prevSection();">← Prev</button>
+            <button id="btn-next" class="section-nav-btn" onclick="nextSection();">Next →</button>
+        </div>
+    </div>
+    
+    <!-- Quiz -->
+    <!-- too lazy to fix the answer-being-inside-the-html vulnerability 😴 -->
+    <div id="quiz-container">
+        <h2 id="quiz-title">Quiz Time!</h2>
+        <div id="quiz-questions">
+            <div class="quiz-question-block" data-answer="2">
+                <p>1. Approximately how much electricity did global data centers consume in 2024?</p>
+                <div class="quiz-options">
+                    <button class="quiz-option">A) 100 TWh</button>
+                    <button class="quiz-option">B) 250 TWh</button>
+                    <button class="quiz-option">C) 415 TWh</button>
+                    <button class="quiz-option">D) 900 TWh</button>
+                </div>
+            </div>
+
+            <div class="quiz-question-block" data-answer="1">
+                <p>2. What is one short-term environmental impact of high data center electricity usage?</p>
+                <div class="quiz-options">
+                    <button class="quiz-option">A) Increased deforestation</button>
+                    <button class="quiz-option">B) Strain on local electrical grids and risk of rolling blackouts</button>
+                    <button class="quiz-option">C) Higher rates of e-waste in landfills</button>
+                    <button class="quiz-option">D) Increased methane from landfills</button>
+                </div>
+            </div>
+
+            <div class="quiz-question-block" data-answer="0">
+                <p>3. Roughly what percentage of all harvested trees are used for paper production?</p>
+                <div class="quiz-options">
+                    <button class="quiz-option">A) 35-40%</button>
+                    <button class="quiz-option">B) 10-15%</button>
+                    <button class="quiz-option">C) 55-60%</button>
+                    <button class="quiz-option">D) 70-75%</button>
+                </div>
+            </div>
+
+            <div class="quiz-question-block" data-answer="3">
+                <p>4. How much e-waste was generated globally in 2022 according to the UN's Global E-waste Monitor?</p>
+                <div class="quiz-options">
+                    <button class="quiz-option">A) 12 million tonnes</button>
+                    <button class="quiz-option">B) 28 million tonnes</button>
+                    <button class="quiz-option">C) 45 million tonnes</button>
+                    <button class="quiz-option">D) 62 million tonnes</button>
+                </div>
+            </div>
+
+            <div class="quiz-question-block" data-answer="2">
+                <p>5. What percentage of e-waste was formally collected and properly recycled in 2022?</p>
+                <div class="quiz-options">
+                    <button class="quiz-option">A) 5.1%</button>
+                    <button class="quiz-option">B) 10.7%</button>
+                    <button class="quiz-option">C) 22.3%</button>
+                    <button class="quiz-option">D) 49.8%</button>
+                </div>
+            </div>
+
+            <div class="quiz-question-block" data-answer="0">
+                <p>6. According to the WHO, what fraction of adults do not meet physical activity guidelines due to increased technology use?</p>
+                <div class="quiz-options">
+                    <button class="quiz-option">A) 1 in 3</button>
+                    <button class="quiz-option">B) 1 in 5</button>
+                    <button class="quiz-option">C) 1 in 2</button>
+                    <button class="quiz-option">D) 1 in 10</button>
+                </div>
+            </div>
+
+            <div class="quiz-question-block" data-answer="3">
+                <p>7. What percentage of heavy computer users report symptoms of Digital Eye Strain (DES)?</p>
+                <div class="quiz-options">
+                    <button class="quiz-option">A) 20-30%</button>
+                    <button class="quiz-option">B) 40-50%</button>
+                    <button class="quiz-option">C) 55-65%</button>
+                    <button class="quiz-option">D) 75-90%</button>
+                </div>
+            </div>
+
+            <div class="quiz-question-block" data-answer="1">
+                <p>8. What percentage of U.S. teens reported being cyberbullied in 2026?</p>
+                <div class="quiz-options">
+                    <button class="quiz-option">A) 27.4%</button>
+                    <button class="quiz-option">B) 53.9%</button>
+                    <button class="quiz-option">C) 68.1%</button>
+                    <button class="quiz-option">D) 81.5%</button>
+                </div>
+            </div>
+
+            <div class="quiz-question-block" data-answer="2">
+                <p>9. What is the main goal of a paperless workplace policy?</p>
+                <div class="quiz-options">
+                    <button class="quiz-option">A) Reduce electricity consumption of servers</button>
+                    <button class="quiz-option">B) Eliminate all computer hardware purchases</button>
+                    <button class="quiz-option">C) Minimize physical paper use by transitioning to digital systems</button>
+                    <button class="quiz-option">D) Promote recycling of ink cartridges</button>
+                </div>
+            </div>
+
+            <div class="quiz-question-block" data-answer="0">
+                <p>10. What is the recommended monitor viewing distance under ergonomics standards?</p>
+                <div class="quiz-options">
+                    <button class="quiz-option">A) 50-70 cm</button>
+                    <button class="quiz-option">B) 10-20 cm</button>
+                    <button class="quiz-option">C) 100-120 cm</button>
+                    <button class="quiz-option">D) 30-40 cm</button>
+                </div>
+            </div>
+
+            <div class="quiz-question-block" data-answer="3">
+                <p>11. Where is York Region's Elgin Mills Community Environmental Centre located?</p>
+                <div class="quiz-options">
+                    <button class="quiz-option">A) 439 University Ave, Toronto, ON</button>
+                    <button class="quiz-option">B) 200 Yonge St, Markham, ON</button>
+                    <button class="quiz-option">C) 55 Eagle St, Newmarket, ON</button>
+                    <button class="quiz-option">D) 1124 Elgin Mills Road East, Richmond Hill, ON</button>
+                </div>
+            </div>
+
+            <div class="quiz-question-block" data-answer="1">
+                <p>12. How can you contact Kids Help Phone via text message?</p>
+                <div class="quiz-options">
+                    <button class="quiz-option">A) Text "HELP" to 911</button>
+                    <button class="quiz-option">B) Text "CONNECT" to 686868</button>
+                    <button class="quiz-option">C) Text "CHAT" to 1-800-668-6868</button>
+                    <button class="quiz-option">D) Text "SUPPORT" to 411</button>
+                </div>
+            </div>
+ 
+            <div class="quiz-question-block" data-answer="0">
+                <p>13. By how much can IoT-driven precision agriculture reduce farm water usage, according to the World Economic Forum?</p>
+                <div class="quiz-options">
+                    <button class="quiz-option">A) Up to 30%</button>
+                    <button class="quiz-option">B) Up to 10%</button>
+                    <button class="quiz-option">C) Up to 55%</button>
+                    <button class="quiz-option">D) Up to 75%</button>
+                </div>
+            </div>
+ 
+            <div class="quiz-question-block" data-answer="2">
+                <p>14. How many recyclable items per minute can AMP Robotics' AI sort?</p>
+                <div class="quiz-options">
+                    <button class="quiz-option">A) 20 items</button>
+                    <button class="quiz-option">B) 50 items</button>
+                    <button class="quiz-option">C) 80 items</button>
+                    <button class="quiz-option">D) 120 items</button>
+                </div>
+            </div>
+
+            <div class="quiz-question-block" data-answer="3">
+                <p>15. According to Accenture, migrating to the public cloud can achieve up to what reduction in IT hardware footprint?</p>
+                <div class="quiz-options">
+                    <button class="quiz-option">A) 15%</button>
+                    <button class="quiz-option">B) 30%</button>
+                    <button class="quiz-option">C) 45%</button>
+                    <button class="quiz-option">D) 59%</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Gambling 🤣 -->
+        <div id="gamble-section">
+            <h3 id="gamble-title">Feeling lucky? 🎲</h3>
+            <p id="gamble-subtitle">Use your score as chips. Bet on the dice roll — High (4~6) or Low (1~3).</p>
+            <p id="chip-count">Chips: 0</p>
+            <div id="gamble-controls">
+                <label for="bet-input">Bet:</label>
+                <input type="number" id="bet-input" min="1" value="1">
+                <button id="btn-high" class="gamble-btn" onclick="gamble('high');">High (4~6)</button>
+                <button id="btn-low"  class="gamble-btn" onclick="gamble('low');">Low (1~3)</button>
+                <button id="btn-cashout" class="gamble-btn gamble-cashout" onclick="cashOut();">Cash Out</button>
+            </div>
+            <p id="gamble-result"></p>
+        </div>
+
+        <div id="quiz-score">
+            <p id="score-text"></p>
+            <button id="quiz-close" onclick="closeQuiz();">Back to Site</button>
+        </div>
+ 
+        <button id="quiz-submit" onclick="submitQuiz();">Submit</button>
+    </div>
+ 
+    <!-- Quiz Button -->
+    <button id="quiz-fab" onclick="openQuiz();">Quiz Time!</button>
+
+    <!-- Notice of license -->
+    <p class="notice">
+        This project's code is licensed under the <a href="https://github.com/DanPlus6/ICS3U1/blob/main/LICENSE">GNU General Public License v3.0</a>
+    </p>
+
+    <!-- Scripts -->
+    <!-- ALWAYS KEEP AT BOTTOM -->
+    <script src="assets/script/dropdown.js"></script>
+    <script src="assets/script/info.js"></script>
+    <script src="assets/script/quiz.js"></script>
+</body>
+</html>

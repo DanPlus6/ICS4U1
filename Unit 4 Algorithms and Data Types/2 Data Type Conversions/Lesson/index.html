@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/styles.css">
+
+    <title>Data Type Conversions</title>
+</head>
+<body>
+    <div class="calculator">
+        <h1>Calculator</h1>
+
+        <input type="number" id="ipt-num-1" placeholder="0">
+        +
+        <input type="number" id="ipt-num-2" placeholder="0">
+        
+        <button onclick="add()">=</button>
+
+        <p id="p-calc-ans"></p>
+    </div>
+
+    <div class="guess-number">
+        <h1>Guess the Number!</h1>
+
+        <input type="number" id="ipt-num-g" placeholder="Guess the number...">
+        n
+        <button onclick="guess()">Guess</button>
+
+        <p id="p-guess-res"></p>
+    </div>
+
+    <div class="calc-hyp">
+        <h1>Hypotenuse Calculator</h1>
+
+        <input type="number" id="ipt-num-a" placeholder="0">
+        +
+        <input type="number" id="ipt-num-b" placeholder="0">
+
+        <button onclick="calcHyp()">=</button>
+
+        <p id="p-hypcalc-ans"></p>
+    </div>
+
+    <div class="rolling-calc">
+        <h1>"Rolling" Calculator</h1>
+
+        <p id="p-rollcalc-ans">0</p>
+
+        <input type="text" id="ipt-num-r" placeholder="Enter one number">
+
+        <div>
+            <button onclick="rollingCalc('add')">+</button>
+            <button onclick="rollingCalc('subtract')">-</button>
+            <button onclick="rollingCalc('multiply')">x</button>
+            <button onclick="rollingCalc('divide')">/</button>
+            <button onclick="rollingCalc('power')">^</button>
+            <button onclick="clearRollingCalc()">Clear</button>
+        </div>
+
+        <p id="p-rollcalc-msg"></p>
+    </div>
+
+    <script src="assets/main.js"></script>
+</body>
+</html>

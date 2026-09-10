@@ -1,0 +1,569 @@
+[
+    {
+        "schoolName": "Western",
+        "city": "London",
+        "province": "Ontario",
+        "country": "Canada",
+        "schoolPicture": "https://www.uwo.ca/img/about/who-we-are/tower-thumb.jpg",
+        "mapPicture": "https://image.uhzcdn.com/house/10/2302af03d0d5c0be9d4d2897be0467bcdf8dbc.png",
+        "programName": "Computer Science",
+        "lengthOfProgram": 4,
+        "programDescription": "Western's computer science program offers students the opportunity to specialize in various fields within CS, such as cybersecurity, AI, game development, data science, etc. It is flexible and can be combined with other degrees.",
+        "hasCoop": true,
+        "admissionCoursesNeeded": "English, Advanced Functions, Calculus and Vectors, + one of the following: Biology, Chemistry, Physics, Data Management, Earth and Space Sciences, Computer Science",
+        "admissionAverageNeeded": 85,
+        "domesticTuition": 7916.88,
+        "internationalTuition": 63385,
+        "academicCostDetails": "Some things that students might need to pay for, aside from tuition are books. ",
+        "academicCost": 1000,
+        "livingCostDetails": "Some students might also want to live on campus, which also costs money. The cost will depend on the type of residency you choose.",
+        "livingCost": 12960,
+        "interestingFacts": "<ol><li>Fact #1: Scientists from Western University (and Sasketchewan) set the stage for cobalt therapy, a cancer treatment that uses gamma rays from the isotope Cobalt-60, to penetrate into the body and eliminate tumors.</li><li>Fact #2: Western has more than 382,000 alumni worldwide.</li><li>Fact #3: Researchers from Western published a total of 5,960 papers in 2024.</li></ol>",
+        "primarySources": [
+            "https://residence.uwo.ca/applying/fees_and_payment",
+            "https://www.uwo.ca/about/whoweare/facts.html",
+            "https://www.csd.uwo.ca/graduate/current/course_descriptions.html"
+        ],
+        "secondarySources": [
+            "https://www.reddit.com/r/uwo/comments/1n81il/whats_the_computer_science_program_like/",
+            "https://app.myblueprint.ca/?returnUrl=/student/highschool"
+        ]
+    },
+    {
+        "schoolName": "McMaster University",
+        "city": "Hamilton",
+        "province": "Ontario",
+        "country": "Canada",
+        "schoolPicture": "https://president.mcmaster.ca/app/uploads/2025/06/ABC_7311rtuniveristyhallspring2020_jpg.jpg",
+        "mapPicture": "https://gs.mcmaster.ca/app/uploads/2019/07/map_of_hamilton.jpeg",
+        "programName": "Health Informatics",
+        "lengthOfProgram": 2,
+        "programDescription": "In Health Informatics at McMaster's University, students will learn to use technology, clinical guidelines, data systems, and information management to enhance the collection, storage, and use of data in the healthcare industry. In this program, students will use computers to examine the fundamental ethics, standards, and guidelines of health informatics, the technological methods of optimizing analysis design and implementation, and also learn how to manage health projects, quality control, and evaluate performance. These skills can be applied to any medical field, such as nursing, pharmacy, dentistry, public health, clinical care, medical research, physiotherapy, and more.",
+        "hasCoop": true,
+        "admissionCoursesNeeded": "This is a Master's degree, so what is required is a 4-year Bachelor's Degree in any major.<br><br>Common ones include:<br>Health Sciences<br>Computer Science<br>Life Sciences<br>Business<br><br>However, if you do not have experience in coding, you are required to take programming prep courses.",
+        "admissionAverageNeeded": 78,
+        "domesticTuition": 13000,
+        "internationalTuition": 36000,
+        "academicCostDetails": "$800 a year for textbooks and $1500 for co-op",
+        "academicCost": 2300,
+        "livingCostDetails": "Shared housing is around $1300 near campus monthly, food would be around $300 monthly, and entertainment is around $250 realistically for young students. Transportation depends if you actually need to go to campus or not for the internship program, however that could be around $100. Each month, students can look at around $1950",
+        "livingCost": 23400,
+        "interestingFacts": "<ol><li>The program is completely online! (In the exception of in-person experience for the internship stream, but other than that, all the courses taken are online)</li><li>This program is taught across 3 different departments: Health Sciences, Engineering, and Business.</li><li>It has the longest health informatics internship in all of Canada (8-months and paid!)</li></ol>",
+        "primarySources": [
+            "https://continuing.mcmaster.ca/programs/health-social-services/health-informatics/#tab-content-ov",
+            "https://continuing.mcmaster.ca/programs/health-social-services/health-informatics/#tab-content-diploma",
+            "https://continuing.mcmaster.ca/programs/health-social-services/health-informatics/schedule/"
+        ],
+        "secondarySources": [
+            "https://teaching.mcmaster.ca/app/uploads/2019/07/MSC-eHEALTH_2013.pdf",
+            "https://www.echima.ca/product/mcmaster-continuing-education-nihi-online-training-courses/"
+        ]
+    },
+    {
+        "schoolName": "McMaster University",
+        "city": "Hamilton",
+        "province": "Ontario",
+        "country": "Canada",
+        "schoolPicture": "https://news.mcmaster.ca/app/uploads/2025/08/20180706-152629-McMaster-University-Campus-0004-1.jpg",
+        "mapPicture": "https://www.ouinfo.ca/assets/files/images/universityStaticMap_mcmaster.png",
+        "programName": "Software and Biomedical Engineering (iBioMed Program)",
+        "lengthOfProgram": 5,
+        "programDescription": "Biomedical and software engineering is an integrated program that combines computing to solve, manage, and create smart technologies, and applies them through a biomedical lens to create technologies that connect and sustain the medical industry.Key topics include programming and software development, data structures and algorithms, Biomedical systems and human physiology, medical imaging and signal processing, artificial intelligence in healthcare, and health informatics and wearable tech",
+        "hasCoop": true,
+        "admissionCoursesNeeded": "English <br> Calculus and Vectors <br> Chemistry <br> Physics <br> Biology",
+        "admissionAverageNeeded": 90,
+        "domesticTuition": 10000,
+        "internationalTuition": 55000,
+        "academicCostDetails": "Includes textbooks which are around 1-1.5k, orientation which is $114, student fees which are $1k per year",
+        "academicCost": 2000,
+        "livingCostDetails": "Includes Housing ranging from 9-12k, food which is 7k, entertainment which is 2-3k, transportation which is $252, all per year",
+        "livingCost": 14000,
+        "interestingFacts": "<ol> <li> The iBioMed program is one of the first of its kind in Canada, combining engineering and health sciences from year one. <li> Students can work on real medical technologies, like prosthetics or health-monitoring devices. <li> McMaster University is known for its problem-based learning approach, especially in health-related fields. <ol>",
+        "primarySources": [
+            "https://academiccalendars.romcmaster.ca/preview_program.php?catoid=65&poid=33526&returnto=14803",
+            "https://www.eng.mcmaster.ca/future-students/future-undergraduate-students/how-to-apply/",
+            "https://www.eng.mcmaster.ca/supplementary-application/"
+        ],
+        "secondarySources": [
+            "https://ontarioyouthmedicalsociety.medium.com/lets-talk-about-mcmaster-ibiomed-922e202bd4f8",
+            "https://invitehealth.substack.com/p/q-and-a-with-julia-u-ibiomed-at-mcmaster"
+        ]
+    },
+    {
+        "schoolName": "Toronto Metropolitian University",
+        "city": "Toronto",
+        "province": "Ontario",
+        "country": "Canada",
+        "schoolPicture": "https://www.torontomu.ca/content/dam/president/images/new-slc.jpg",
+        "mapPicture": "https://s38328.pcdn.co/wp-content/uploads/staticmap.png",
+        "programName": "Computer Science",
+        "lengthOfProgram": 5,
+        "programDescription": "The program highlights hands-on experience through labs, research projects, and an optional five-year co-op stream, where you can work at companies like Google or Wealthsimple.",
+        "hasCoop": true,
+        "admissionCoursesNeeded": "English (ENG4U preferred), Advanced Functions (MHF4U), Calculus and Vectors (MCV4U) preferred, or Mathematics of Data Management (MDM4U), One Grade 12 U Science course (Physics, Chemistry, or Biology)",
+        "admissionAverageNeeded": 70,
+        "domesticTuition": 9796,
+        "internationalTuition": 36875,
+        "academicCostDetails": "Textbooks and applications",
+        "academicCost": 1400,
+        "livingCostDetails": "Cost of living on campus including food, rent, entertainment, transportation, and health",
+        "livingCost": 3500,
+        "interestingFacts": "TMU features an urban landmark called Lake Devo, located in the middle of campus. Because of its unique downtown location at Yonge-Dundas Square, some of TMUs largest lectures are held in the Cineplex movie theatre. For the Fall 2026 intake, TMU is launching a new Cyber Science (BSc) program.",
+        "primarySources": [
+            "https://www.torontomu.ca/programs/undergraduate/computer-science/#fees",
+            "https://www.torontomu.ca/cs/future-undergraduate-students/program-overview/",
+            "https://www.torontomu.ca/admissions/undergraduate/student-blog/news-and-events/2022/10/15-facts-you-should-know-about-tmu/"
+        ],
+        "secondarySources": [
+            "https://www.history.utoronto.ca/graduate/prospective-students/living-costs-toronto",
+            "https://www.spergel.ca/learning-centre/the-cost-of-living-in-ontario/"
+        ]
+    },
+    {
+        "schoolName": "University of Waterloo",
+        "city": "Waterloo",
+        "province": "Ontario",
+        "country": "Canada",
+        "schoolPicture": "https://cdn.prod.website-files.com/67b861ab00707b40050b601f/69417de2d8a3611df9d3aefd_uw-campus.png",
+        "mapPicture": "https://i.imgur.com/8HweuU1.png",
+        "programName": "Computer Engineering",
+        "lengthOfProgram": 5,
+        "programDescription": "Computer engineering is a branch of engineering which is a combination of both computer science and electrical engineering. The field studies several disciplines to design and develop software and hardware.",
+        "hasCoop": true,
+        "admissionCoursesNeeded": "Grade 12 English (ENG4U)<br>Grade 12 Advanced Functions (MHF4U)<br>Grade 12 Calculus and Vectors (MCV4U)<br>Grade 12 Physics (SPH4U)<br>Grade 12 Chemistry (SCH4U)",
+        "admissionAverageNeeded": 92,
+        "domesticTuition": 16000,
+        "internationalTuition": 73000,
+        "academicCostDetails": "Computer: $2000, Books and supplies: $2,964, Total academic cost: $4964",
+        "academicCost": 4964,
+        "livingCostDetails": "Residence Cost: $6,946 - $8,494 per year, Meal Plan Cost: $6,230 - $7,230 per year, Utilities: $11,400 - $22,800 per year, Groceries: $4,620 per year, Telephone: $1,272 per year, Entertainment: $1,800 per year, Personal care: $960 per year, Clothing: $1,574 per year, Laundry: $516 per year, and Transportation(light rail and bus): $338 per year",
+        "livingCost": 25452,
+        "interestingFacts": "<ol><li>96% of co-op graduates are employed within six months of graduation.</li><li>57% of varsity athletes achieved an academic average of 80% or higher during 2024/2025.</li><li>Students earn on average $16,700 for a four-month co-op work term.</li></ol>",
+        "primarySources": [
+            "https://uwaterloo.ca/future-graduate-students/funding/living-costs-and-housing",
+            "https://uwaterloo.ca/about/facts",
+            "https://uwaterloo.ca/future-students/programs/computer-engineering"
+        ],
+        "secondarySources": [
+            "https://www.topuniversities.com/blog/10-things-people-dont-tell-you-about-university-waterloo",
+            "https://www.coursera.org/ca/articles/computer-engineering"
+        ]
+    },
+    {
+        "schoolName": "Waterloo University & Wilfrid Laurier University",
+        "city": "Waterloo",
+        "province": "Ontario",
+        "country": "Canada",
+        "schoolPicture": "https://uwaterloo.ca/new-math-students/sites/default/files/uploads/images/uw_wlu_logos.png ",
+        "mapPicture": "https://kitchener.citynews.ca/wp-content/blogs.dir/sites/3/2025/08/15/fatal-crash.png",
+        "programName": "Business Administration (Laurier) and Computer Science (Waterloo) double degree.",
+        "lengthOfProgram": 5,
+        "programDescription": "In Waterloo university, students will take courses towards computer science, learning fundamental mathematics, computer programming, data structures, algorithms, software engineering, operating systems, and social implications of computing. In Laurier Wilfried University, distinguished professors and industry executives with experience will be teaching business basics: finance, accounting, marketing, organizational behaviour, business communication, law, human resource management, and business policy.",
+        "hasCoop": true,
+        "admissionCoursesNeeded": "Six Grade 12 U and/or M courses including: Advanced Functions, Calculus and Vectors <br>Any Grade 12 U English</br><br>One other 4U course<br/><br>Recommended course: Grade 11 U Introduction to Computer Science<br/>",
+        "admissionAverageNeeded": 95,
+        "domesticTuition": 17000,
+        "internationalTuition": 75000,
+        "academicCostDetails": "Book suppplies cost $1,500 and for Co-Op fee, it is different each year but for the years between 2026-2027 it is $836 ",
+        "academicCost": 2336,
+        "livingCostDetails": "The in-campus housing is between $4,127-$5,492 per term. Off-campus housing is between $827-$1,833 per month. On average food/meals are between $2,220-$4,600 and personal expenses are $4,000 on average per year",
+        "livingCost": 14092,
+        "interestingFacts": "<ol><li>The gooses in the area are gangsters, they are aggressive and poop can be found everywhere</li><li>\u201cA previous April Fools, we invented a few campus myths and published them in the Gazette \u2014 including an Indian maiden who drowned herself for love in Laurel Lake (the one below Conrad Grebel), and a ghost in the Dana Porter elevators, which do seem to have a non-human intelligence. Some of the night custodians were so frightened by the latter story that I had to write a memo, for posting in their staff room, explaining that it was a joke.\u201d Waterloo University Website</li><li>Waterloo established the first Faculty of Mathematics in North America (1967)</li></ol>",
+        "primarySources": [
+            "https://uwaterloo.ca/campus-housing/fees-contracts/residence",
+            "https://uwaterloo.ca/future-students/financing/tuition",
+            "https://uwaterloo.ca/future-students/programs/business-administration-computer-science-double-degree"
+        ],
+        "secondarySources": [
+            "https://www.ouinfo.ca/programs/waterloo/wbc ",
+            "https://www.topuniversities.com/blog/10-things-people-dont-tell-you-about-university-waterloo#:~:text=University%20of%20Waterloo-,10%20Things%20People%20Dont%20Tell%20You%20About%20the%20University,2."
+        ]
+    },
+    {
+        "schoolName": "The University of Hong Kong",
+        "city": "Pok Fu Lam",
+        "province": "Hong Kong Island",
+        "schoolPicture": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/51/08/85/caption.jpg",
+        "mapPicture": "https://goglobal.ubc.ca/sites/default/files/styles/square_600/public/2024-08/University%20of%20Hong%20Kong.jpg",
+        "programName": "Computing and data science",
+        "lengthOfProgram": 4,
+        "programDescription": "The Bachelor of Engineering in Computer Science covers a comprehensive curriculum that includes fundamental concepts such as mathematics, programming languages, algorithms, and data structures, as well as advanced topics such as computer organization, software engineering, and artificial intelligence. Students can specialize in areas such as AI and robotics, big data analytics, cybersecurity, financial computing, systems and networking, and theoretical computer science, and benefit from opportunities for hands-on learning and project-based work.",
+        "hasCoop": true,
+        "admissionCoursesNeeded": "Chinese language level 3 english language level 3 math level 3 Attained citizenship and social developmentLevel 3 on an elective",
+        "admissionAverageNeeded": 95,
+        "domesticTuition": 7860,
+        "internationalTuition": 38493.65,
+        "academicCostDetails": "textbooks",
+        "academicCost": 950,
+        "livingCostDetails": "housing, meals, entertainment",
+        "livingCost": 12000,
+        "interestingFacts": "You can choose between 2 degrees when you graduate The program is very new Some students are granted access to study at shanghai",
+        "primarySources": [
+            "https://admissions.hku.hk/programmes/undergraduate-programmes/computing-and-data-science",
+            "www.cds.hku.hk",
+            "www.cds.hku.hk/prospective-students/undergraduate/6999-computing-and-data-science"
+        ],
+        "secondarySources": [
+            "about:blank",
+            "about:blank"
+        ]
+    },
+    {
+        "schoolName": "The University of Hong Kong: Department of Data and Systems Engineering",
+        "city": "Pok Fu Lam",
+        "province": "Hong Kong",
+        "country": "China",
+        "schoolPicture": "https://hkuvn.edu.vn/wp-content/uploads/2024/10/about-img2.png",
+        "mapPicture": "https://goglobal.ubc.ca/sites/default/files/styles/square_600/public/2024-08/University%20of%20Hong%20Kong.jpg?itok=TdKCS6ra",
+        "programName": "Bachelor of Engineering in Data and Systems Engineering",
+        "lengthOfProgram": 4,
+        "programDescription": "Students learn the fundamentals of system analysis and computiting disciplines, like operational research, mathematical and data-driven optimization, along with system simulation and modeling. Students are also introduced to artificial intelligence and intelligence system technologies.",
+        "hasCoop": true,
+        "admissionCoursesNeeded": "English<br>Chinese<br>Mathematics<br>Liberal Sciences / Citizenship and Social Development<br>Biology / Chemistry / Combined Science / Physics",
+        "admissionAverageNeeded": 75,
+        "domesticTuition": 8164.56,
+        "internationalTuition": 43254.04,
+        "academicCostDetails": "Learning materials and activities",
+        "academicCost": 17.52,
+        "livingCostDetails": "Living on campus and Average life of student living in Hong Kong",
+        "livingCost": 13482.74,
+        "interestingFacts": "<ol><li>University of Hong Kong is the top university in Asia and the 16th best university in the world</li><li>University of Hong Kong started as the Hong Kong College of Medicine for Chinese in 1887</li><li>University of Hong Kong is the oldest university in Hong Kong</li></ol>",
+        "primarySources": [
+            "https://www.dase.hku.hk/teaching-and-learning/current-students/bachelor-of-engineering-in-data-and-systems-engineering-beng-dase",
+            "https://admissions.hku.hk/apply/jupas",
+            "https://admissions.hku.hk/fees-and-scholarships/fees"
+        ],
+        "secondarySources": [
+            "https://laurenlovesnoodles.blogspot.com/2013/05/8-things-to-know-about-hku.html",
+            "https://kids.kiddle.co/University_of_Hong_Kong"
+        ]
+    },
+    {
+        "schoolName": "University of Waterloo",
+        "city": "Waterloo",
+        "province": "Ontario",
+        "country": "Canada",
+        "schoolPicture": "https://commons.wikimedia.org/wiki/Special:FilePath/University%20of%20Waterloo%20campus.JPG",
+        "mapPicture": "https://i.imgur.com/iKBzlot.png",
+        "programName": "Software Engineering",
+        "lengthOfProgram": 5,
+        "programDescription": "In the University of Waterloo Software Engineering program, you learn how to design, code, and manage complex software systems using programming, algorithms, and teamwork.<br><br>In first year, you take math, programming, chemistry, and digital logic courses to build a foundation. In upper years, you study data structures, algorithms, operating systems, databases, user-interface design, and large-scale software architecture, often through team projects that mirror real-world development. You also learn about software design, testing, and human-computer interaction. Specialization options include AI, HCI, business, and others.",
+        "hasCoop": true,
+        "admissionCoursesNeeded": "Ontario Secondary School Diploma (OSSD) with 6 Grade 12 U/M courses, including:<br>ENG4U<br>MHF4U (Advanced Functions)<br>MCV4U (Calculus and Vectors)<br>SPH4U (Physics)<br>SCH4U (Chemistry)<br>One additional Grade 12 U/M course<br><br>Minimum final grade of 70% is required in each of the 6 U/M courses.<br>Admission average: individual selection from the low to mid-90s.<br><br>Non-academic requirements: a mandatory Admission Information Form (AIF), an online Software Engineering interview, programming course or self-study experience, and demonstrated interest in solving open problems, debugging, testing code, and learning new software languages.",
+        "admissionAverageNeeded": 95,
+        "domesticTuition": 17666,
+        "internationalTuition": 59000,
+        "academicCostDetails": "Textbooks, Incidental Fees, Co-op Fees",
+        "academicCost": 2476,
+        "livingCostDetails": "Residence, Meal Plan, Off-campus Housing, Personal Expenses",
+        "livingCost": 18000,
+        "interestingFacts": "<ol><li>The Waterloo Region is home to Google, Shopify, and more than 1,500 other technology companies, providing extensive co-op and career opportunities nearby.</li><li>On average, Engineering co-op students earn $20-$30/hour per 4-month domestic work term, helping meaningfully offset tuition and living expenses.</li><li>The University of Waterloo has been ranked the #1 most innovative university in Canada for 30 consecutive years by Maclean's University Rankings (2025).</li></ol>",
+        "primarySources": [
+            "https://uwaterloo.ca/future-students/programs/software-engineering",
+            "https://uwaterloo.ca/future-students/admissions/admission-requirements/software-eng/high-school/domestic/ontario",
+            "https://uwaterloo.ca/finance/student-financial-services/tuition-fee-schedules"
+        ],
+        "secondarySources": [
+            "https://www.ouinfo.ca/programs/waterloo/wso",
+            "https://www.youthfully.com/waterloo-engineering-definitive-guide/"
+        ]
+    },
+    {
+        "schoolName": "York University",
+        "city": "Toronto",
+        "province": "Ontario",
+        "country": "Canada",
+        "schoolPicture": "https://futurestudents.yorku.ca/sites/futurestudents/files/2021-09/vari-drone.jpg",
+        "mapPicture": "https://www.ouinfo.ca/assets/files/images/universityStaticMap_york.png",
+        "programName": "Computer Science",
+        "lengthOfProgram": 4,
+        "programDescription": "You will learn to build strong foundations in programming, algorithms, data structures, and systems. Youll then apply them through labs, projects, and supervised work. Along the way, you will learn to design real systems, work in teams, and build technology that performs outside the classroom. You can learn Artificial intelligence & machine learning, Computer vision & robotics, Data science & visualization, Software engineering & systems, Cybersecurity & privacy, and High-performance & distributed computing.",
+        "hasCoop": true,
+        "admissionCoursesNeeded": "ENG4U<br>SCH4U or SPH4U<br>MHF4U<br>4U math<br>two additional 4U or M courses",
+        "admissionAverageNeeded": 82,
+        "domesticTuition": 9918,
+        "internationalTuition": 36955,
+        "academicCostDetails": "You need to pay for Books and fees",
+        "academicCost": 1438,
+        "livingCostDetails": "The living costs included are: Residency, Dental, Meal plan, and Personal",
+        "livingCost": 17431,
+        "interestingFacts": "<ol> <li> York is home to the first and only space engineering program in Canada at the Lassonde School of Engineering.</li> <li>Big productions such as American Psycho 2: All American Girl and season one of Gen V were shot on Yorks campuses.</li><li>Yorks largest campus may be the Keele location, but its first campus was actually Glendon. It became Yorks first permanent establishment in 1959 and was officially inaugurated by Prime Minister Lester B. Pearson in 1966.</li></ol>",
+        "primarySources": [
+            "https://futurestudents.yorku.ca/program/computer-science#requirements ",
+            "https://futurestudents.yorku.ca/your-application/how-apply/high-school-student-ontario "
+        ],
+        "secondarySources": [
+            "https://maps.info.yorku.ca/keele-driving-directions/ ",
+            "https://yublog.students.yorku.ca/fun-facts-about-york-university"
+        ]
+    },
+    {
+        "schoolName": "University of Toronto (St. George Campus)",
+        "city": "Toronto",
+        "province": "Ontario",
+        "country": "Canada",
+        "schoolPicture": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/University_College_at_UofT%2C_October_10_2025_%2804%29.jpg/1280px-University_College_at_UofT%2C_October_10_2025_%2804%29.jpg",
+        "mapPicture": "https://cdn.prod.website-files.com/66ad2a4666b792a700830b04/6764b12acea79bfd7bcc0122_6764af277b46ad220171f31c_UofT%2520St.%2520George%2520Campus.png",
+        "programName": "Engineering Science - Electrical & Computer Engineering (ECE) Major (Bachelor of Applied Science, BASc) Faculty of Applied Science & Engineering",
+        "lengthOfProgram": 4,
+        "programDescription": "The ECE program prepares students with a broad foundation and training in both hardware and software. Focus areas include photonics and semiconductor physics, computer hardware, electronics, and software. Core courses cover electromagnetic fields, energy systems, electronics, computer organization, systems software, and computing. The program offers a very broad range of technical electives, allowing students to focus on their specific interests within ECE.",
+        "hasCoop": true,
+        "admissionCoursesNeeded": "ENG4U<br>MCV4U<br>MHF4U<br>SCH4U<br>SPH4U<br>plus one additional U/M course.",
+        "admissionAverageNeeded": 98,
+        "domesticTuition": 16829,
+        "internationalTuition": 69390,
+        "academicCostDetails": "Incidental Fees, Books/Supplies",
+        "academicCost": 3703.84,
+        "livingCostDetails": "Residence & Meal Plan, Entertainment, Transportation",
+        "livingCost": 40000,
+        "interestingFacts": "<ol><li>U of T is the #1 university in Canada for research-based startups.</li><li>#1 engineering program in Canada and 17th in the world.</li><li>9 winners of the Nobel Prize attended UofT.</li></ol>",
+        "primarySources": [
+            "https://discover.engineering.utoronto.ca/programs/engineering-programs/",
+            "https://engsci.utoronto.ca/program/what-is-engsci/",
+            "https://engsci.utoronto.ca/program/majors/electrical-computer-engineering/"
+        ],
+        "secondarySources": [
+            "https://studentlife.utoronto.ca/task/living-costs-in-toronto/",
+            "https://www.youthfully.com/u-of-t-engineering-definitive-guide/"
+        ]
+    },
+    {
+        "schoolName": "University of British Columbia",
+        "city": "Kelowna",
+        "province": "British Columbia",
+        "country": "Canada",
+        "schoolPicture": "https://www.optionssolutionsed.com/wp-content/uploads/2024/12/ubco-aerials-our-campus_1920x700-1024x373.jpg",
+        "mapPicture": "https://images.alluradirect.com/Images/kelowna/Kelowna-accomodations-area-map.gif",
+        "programName": "Data Science",
+        "lengthOfProgram": 4,
+        "programDescription": "In this program, you learn how to visualize and analyze data using R and Python coding software to then build machine learning models and understand data ethics. This provides a pathway for many hands-on careers in the field of computer science and statistics. ",
+        "hasCoop": true,
+        "admissionCoursesNeeded": "Grade 12, English ENG4U, Advanced Function MHF4U (Minimum 67%). Biology SBI4U, Chemistry SCH4U, Physics SPH4U. Grade 11 Chemistry SCH3U.",
+        "admissionAverageNeeded": 95,
+        "domesticTuition": 6200.7,
+        "internationalTuition": 53082,
+        "academicCostDetails": "Student fees, such as accessibility for the athletic recreation center and student union services. And other fees for library and media funds. Textbooks",
+        "academicCost": 440.25,
+        "livingCostDetails": "There are fees for living and the meal plan. UBC offers a U-Pass BC program, which is a program that runs and gives students accessible public transportation around the city of Kelowna.",
+        "livingCost": 14333.85,
+        "interestingFacts": "When staying on the Okanagan campus, there are 2000 annual hours of sunshine with an average temperature of 25 Celsius from May to August and -4.7 Celsius from December to March. They have a 1560 square meter gymnasium, which is the size of 3.5 NBA courts. UBC has a Quadball Team, which is a sport based on the Harry Potter game Quidditch, and has played in games in North America, representing Vancouver or Canada itself.",
+        "primarySources": [
+            "https://students.ubc.ca/finances/tuition-fees/undergraduate-tuition-fees/",
+            "https://you.ubc.ca/ubc_programs/data-science/",
+            "https://ok.ubc.ca/about/facts-and-figures/"
+        ],
+        "secondarySources": [
+            "https://www.reddit.com/r/UBC/comments/1o39c1g/what_are_the_most_interestingfascinating_facts/",
+            "https://www.ibm.com/think/topics/data-science"
+        ]
+    },
+    {
+        "schoolName": "University of Toronto Scarborough",
+        "city": "Scarborough",
+        "province": "Ontario",
+        "country": "Canada",
+        "schoolPicture": "https://upload.wikimedia.org/wikipedia/commons/b/ba/University_of_Toronto_Scarborough_aerial_view_2024.jpg",
+        "mapPicture": "https://cdn.prod.website-files.com/66ad2a4666b792a700830b04/6764b12acea79bfd7bcc0122_6764af277b46ad220171f31c_UofT%2520St.%2520George%2520Campus.png",
+        "programName": "Computer Science",
+        "lengthOfProgram": 4,
+        "programDescription": "You learn a variety of applications to put computer science into real life applications. You learn the coding language python(functions, classes, methods, lists, etc) and advanced data structuring in python, then implement them. ",
+        "hasCoop": true,
+        "admissionCoursesNeeded": "You must take the following: Grade 12 English | Minimum of 70% Advanced Functions Calculus",
+        "admissionAverageNeeded": 95,
+        "domesticTuition": 11420,
+        "internationalTuition": 65480,
+        "academicCostDetails": "Books and other supplies can vary in cost but the range of that cost is around $1,000 to $2,000",
+        "academicCost": 2000,
+        "livingCostDetails": "If you want to live on campus, the cost is around $8,123 to $17,163",
+        "livingCost": 17163,
+        "interestingFacts": "92% of students that take this computer science course are usually employed after 2 years of taking this course and graduation. Like all computer science courses, this course is extremely competitive to get into. With requirements of low 90s to high 90s average.  University of Toronto\u2019s computer science programs are ranked one of the best in the world. ",
+        "primarySources": [
+            "https://www.utsc.utoronto.ca/admissions/tuition-and-fees",
+            "https://www.utsc.utoronto.ca/admissions/programs/computer-science#program-overview",
+            "https://www.utsc.utoronto.ca/cms/computer-science-overview"
+        ],
+        "secondarySources": [
+            "https://www.ouinfo.ca/programs/toronto-scarborough/txc",
+            "https://utsc.calendar.utoronto.ca/major-program-computer-science-science-scmaj1688"
+        ]
+    },
+    {
+        "schoolName": "McMaster University",
+        "city": "Hamilton",
+        "province": "Ontario",
+        "country": "Canada",
+        "schoolPicture": "https://president.mcmaster.ca/app/uploads/2025/06/ABC_7311rtuniveristyhallspring2020_jpg.jpg",
+        "mapPicture": "https://hamiltonnature.org/wp-content/uploads/2019/05/hsa_area.png",
+        "programName": "Computer Engineering",
+        "lengthOfProgram": 4,
+        "programDescription": "The student will study the science and technology of design, apply both hardware and software components of computing systems. Additionally, the program covers computer hardware, programming, electronics, digital communications, multimedia, signal processing, robotics, and other technology subjects. Also, combines the world of design of hardware electronic engineering and the world of software computer science components",
+        "hasCoop": true,
+        "admissionAverageNeeded": 88,
+        "domesticTuition": 11987.0125,
+        "internationalTuition": 66026.4475,
+        "academicCostDetails": "textbooks, food",
+        "academicCost": 5000,
+        "livingCostDetails": "Housing, transportation, entertainment",
+        "livingCost": 15600,
+        "interestingFacts": "For admission to level 2, the faculty boasts a 97% retention rate from the first year to second year. It needs a minimum 4.0 GPA.Has 1/5 of Albert Einstein's brain in a jar. Ranked 4th in Top Universities of Canada 2026.",
+        "primarySources": [
+            "https://www.eng.mcmaster.ca/ece/degree-options/computer-engineering/",
+            "https://www.eng.mcmaster.ca/co-op-career-experience/how-co-op-works/ ",
+            "https://registrar.mcmaster.ca/fees/undergraduate/"
+        ],
+        "secondarySources": [
+            "https://core.myblueprint.ca/V5/PostSecondary/CollegeUniversity",
+            "https://www.timeshighereducation.com/student/best-universities/best-universities-canada"
+        ]
+    },
+    {
+        "schoolName": "York University(Markham campus)",
+        "city": "Markham",
+        "province": "Ontario",
+        "country": "Canada",
+        "schoolPicture": "https://www.yorku.ca/markham/wp-content/uploads/sites/573/2024/10/Building320_zoomed.jpg",
+        "mapPicture": "https://www.yorku.ca/markham/wp-content/uploads/sites/573/2020/07/MAP_2019.07.30-CPA-Markham-1-pager.png",
+        "programName": "Computer Science for Software Development",
+        "lengthOfProgram": 4,
+        "programDescription": "You will be doing lots of hands-on stuff, for example you will be building real software, collaborating with teams, and developing technical and professional skills. Their curriculum centers on modern software development and has specialized course streams in cloud computing, cybersecurity, and data science. And it engages you with ethics, privacy and social responsibility.",
+        "hasCoop": true,
+        "admissionCoursesNeeded": "You need OSSD, ENG4U, MHF4U, SBI4U or SCH4U or SPH4U, and three additional 4U or M courses.",
+        "admissionAverageNeeded": "academic average should be in the low 80s. No prerequisites below 70%",
+        "domesticTuition": 9918,
+        "internationalTuition": 36955,
+        "academicCostDetails": "Text Books",
+        "academicCost": 1410,
+        "livingCostDetails": "Housing, meal Plan, personal expenses, and health and dental care together",
+        "livingCost": 20207,
+        "interestingFacts": "Exclusively offered in the Markham campus of York University. This is a 120 credit program or done in 8 terms. You get a bachelor of applied science in computer science for software development.",
+        "primarySources": [
+            "https://www.yorku.ca/markham/technology-software-data",
+            "https://futurestudents.yorku.ca/financing-your-degree/tuition-fees",
+            "https://futurestudents.yorku.ca/program/computer-science-for-software-development"
+        ],
+        "secondarySources": [
+            "https://www.ouinfo.ca/programs/york-markham/ymf",
+            "https://lassonde.yorku.ca/academics/computer-science-for-software-development"
+        ]
+    },
+    {
+        "schoolName": "University of Ottawa",
+        "city": "Ottawa",
+        "province": "Ontario",
+        "country": "Canada",
+        "schoolPicture": "https://assets.studies-overseas.com/University_of_Ottawa_Desktop_984x398_Header_Banner_2d7168039b.webp",
+        "mapPicture": "https://www.climatestotravel.com/images/maps/Ottawa.jpg",
+        "programName": "Bachelor of Applied Science (BASc) in Computer Engineering",
+        "lengthOfProgram": 4,
+        "programDescription": "Building on a solid foundation of traditional engineering skills, this program covers many different aspects of computer software and hardware design, and allows for more specialized studies in microprocessor-based systems, computer architecture, programming concepts, real-time operating systems, software engineering, and robotics. Computer Engineering is a specialized discipline that combines electrical engineering and computer science. Computer engineers are responsible for ensuring the safe operation of information systems \u2014 they are expert designers of computers and their digital components, as well as expert in the design and analysis of control systems based on computers, and in the design of large communication networks. Throughout the program, students take non-engineering courses covering communication skills, economics, ethical issues, and the impact of technology on society. First-year compulsory courses include: Principles of Chemistry, Engineering Mechanics, Fundamentals of Engineering Computation, Digital Systems I, Introduction to Computing II, Calculus I, and Calculus II. Technical elective options in upper years include: wireless networks, applied machine learning for computer engineering, distributed systems design, digital image processing, computer network management, design of secure computer systems, and computer control in robotics. All courses are available in English and French.",
+        "hasCoop": true,
+        "admissionCoursesNeeded": "ENG4U (English) or FRA4U (French)<br>MHF4U (Advanced Functions)<br>MCV4U (Calculus and Vectors)<br>SPH4U (Physics)<br>SCH4U (Chemistry)",
+        "admissionAverageNeeded": 85,
+        "domesticTuition": 11219,
+        "internationalTuition": 63164,
+        "academicCostDetails": "Ancillary fees (U-Pass transit, Health Services, Sports Services, University Centre, CEED, Engineering Endowment Fund, UOSU), health & dental insurance plan, and estimated textbooks",
+        "academicCost": 2546,
+        "livingCostDetails": "Off-campus shared housing, groceries, dining out, local transportation (OC Transpo), entertainment, and personal expenses",
+        "livingCost": 15000,
+        "interestingFacts": "<ol><li>The University of Ottawa is the only bilingual research-intensive university in Canada and the largest bilingual (English-French) university in the world, welcoming nearly 50,000 students from over 150 countries. It was founded in 1848.</li><li>uOttawa is ranked 1st in Canada for scholarships and financial aid (Maclean's, Canada's Best Universities 2026) and 5th in Canada in research intensity (Research Infosource 2025), and 5th in Canada for co-op program size.</li><li>The uOttawa Computer Engineering program is accredited by the Canadian Engineering Accreditation Board (CEAB) and recognized under the Washington Accord \u2014 an international agreement accepting accredited engineering degrees across countries including the USA, UK, and Australia, giving graduates a globally recognized qualification.</li></ol>",
+        "primarySources": [
+            "https://www.ouinfo.ca/programs/ottawa/obe",
+            "https://www.uottawa.ca/faculty-engineering/undergraduate-studies/programs/computer-engineering",
+            "https://catalogue.uottawa.ca/en/undergrad/basc-computer-engineering/"
+        ],
+        "secondarySources": [
+            "https://www.ouinfo.ca/universities/ottawa/residences",
+            "https://viaottawa.ca/cost-of-living-ottawa-2025/"
+        ]
+    },
+    {
+        "schoolName": "University of Toronto Mississauga",
+        "city": "Mississauga",
+        "province": "Ontario",
+        "country": "Canada",
+        "schoolPicture": "https://www.utoronto.ca/sites/default/files/2025-04/UofT87742_0622UTMDrone004-crop.jpg",
+        "mapPicture": "https://i.ytimg.com/vi/aCMRtxOMCWQ/maxresdefault.jpg",
+        "programName": "Computer Science",
+        "lengthOfProgram": 4,
+        "programDescription": "The Computer Science program at UTM teaches programming, software development, algorithms, artificial intelligence, and problem-solving skills through projects and labs.",
+        "hasCoop": true,
+        "admissionCoursesNeeded": "ENG4U - English<br>MCV4U - Calculus and Vectors<br>MHF4U - Advanced Functions",
+        "admissionAverageNeeded": 92,
+        "domesticTuition": 6100,
+        "internationalTuition": 61000,
+        "academicCostDetails": "Books, technology fees, incidental fees, lab fees",
+        "academicCost": 2500,
+        "livingCostDetails": "Residence, meals, transportation, entertainment, personal expenses",
+        "livingCost": 18000,
+        "interestingFacts": "<ol><li>UTM is one of the three University of Toronto campuses.</li><li>The campus has beautiful nature trails and the Credit River.</li><li>Computer Science students can participate in internships and research projects.</li></ol>",
+        "primarySources": [
+            "https://www.utm.utoronto.ca/",
+            "https://future.utoronto.ca/",
+            "https://www.utm.utoronto.ca/future-students/programs/computer-science"
+        ],
+        "secondarySources": [
+            "https://www.ontariouniversitiesinfo.ca/",
+            "https://www.topuniversities.com/"
+        ]
+    },
+    {
+        "schoolName": "Ontario Tech University",
+        "city": "Oshawa",
+        "province": "Ontario",
+        "country": "Canada",
+        "schoolPicture": "https://shared.ontariotechu.ca/shared/ontario-tech/images/buildings/north-oshawa/library/150822-18_extended_sky-thumb.jpg",
+        "mapPicture": "https://boundlessmaps.com/wp-content/uploads/maps/sma/oshawa-10000-sma-fa7b5e-preview-2.png",
+        "programName": "Information Technology - Game Development and Interactive Media",
+        "lengthOfProgram": 4,
+        "programDescription": "You learn knowledge and skills that help with careers in the gaming, interactive media and simulation industries, or help with being an entrepreneur in charge of developing and managing a gaming/interactive media studio.",
+        "hasCoop": true,
+        "admissionCoursesNeeded": "Current Ontario secondary school students must complete the Ontario Secondary School Diploma (OSSD) with <br> six 4U or 4M credits including English (ENG4U) <br> and one of Advanced Functions (MHF4U), Calculus and Vectors (MCV4U) or Mathematics of Data Management (MDM4U) <br> or Computer Science (ICS4U)",
+        "admissionAverageNeeded": 65,
+        "domesticTuition": 9031.18,
+        "internationalTuition": 40915.66,
+        "academicCostDetails": "Ancillary fees and Technology",
+        "academicCost": 2365.45,
+        "livingCostDetails": "Cheapest Housing and Meal Options",
+        "livingCost": 10429,
+        "interestingFacts": "<ol><li>At the end of each year there is a gamecon for students to show what they've worked on</li><li>There are many entrepreneurship events for students to partake in</li><li>Labs and workshops where students can try different games and can create games are frequent</li></ol>",
+        "primarySources": [
+            "https://ontariotechu.ca/programs/undergraduate/computers-and-technology/information-technology-game-development-and-interactive-media/index.php",
+            "https://businessandit.ontariotechu.ca/undergraduate/bachelor-of-information-technology/game-development-and-interactive-media/index.php",
+            "https://registrar.ontariotechu.ca/fees-and-payment/tuition-calculator/index.php"
+        ],
+        "secondarySources": [
+            "https://www.cgspectrum.com/career-pathways/game-development",
+            "https://www.hotcoursesabroad.com/study/canada/school-college-university/ontario-tech-university/448650/international.html"
+        ]
+    },
+    {
+        "schoolName": "University of British Columbia",
+        "city": "Vancouver",
+        "province": "British Columbia",
+        "country": "Canada",
+        "schoolPicture": "https://you.ubc.ca/wp-content/uploads/2025/05/ubc-vancouver-campus.jpg",
+        "mapPicture": "https://planning.ubc.ca/sites/default/files/inline-images/ArrivalEdit_Dec2015_0.jpg",
+        "programName": "Computer Science",
+        "lengthOfProgram": 4,
+        "programDescription": "Students learn programming, software development, and algorithms.",
+        "hasCoop": true,
+        "admissionCoursesNeeded": "English<br>Advanced Functions<br>Calculus",
+        "admissionAverageNeeded": 95,
+        "domesticTuition": 6000,
+        "internationalTuition": 47000,
+        "academicCostDetails": "Books, lab fees, and supplies",
+        "academicCost": 2000,
+        "livingCostDetails": "Housing, meals, transportation, entertainment",
+        "livingCost": 18000,
+        "interestingFacts": "UBC is one of the top universities in Canada<br>The UBC campus is close to the Pacific Ocean.Many movies and TV shows are filmed at UBC",
+        "primarySources": [
+            "https://www.ubc.ca",
+            "https://soccer2026.ubc.ca/",
+            "https://events.ubc.ca/event/thinking-beyond-the-market/"
+        ],
+        "secondarySources": [
+            "https://www.wikipedia.org",
+            "https://www.topuniversities.com/universities/university-british-columbia"
+        ]
+    }
+]
