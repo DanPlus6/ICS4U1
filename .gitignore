@@ -1,0 +1,15 @@
+# temp files
+*.swp
+*.docx#
+
+# large binaries
+*.tar.gz
+*.gz
+*.zip
+dist
+
+# IDEs
+.vscode
+
+# internal project repos
+**/.git
