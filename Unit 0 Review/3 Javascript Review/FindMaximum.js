@@ -1,6 +1,6 @@
 'use strict';
 
-const A = prompt('Input a list of numbers each separated by a space:\n').trim().split(/\s+/).map(Number);
+const A = prompt('Input a list of numbers each separated by a space:\n').trim().split(' ').map(Number);
 
 if (A.length < 1) throw Error("Input list can't be empty!");
 
