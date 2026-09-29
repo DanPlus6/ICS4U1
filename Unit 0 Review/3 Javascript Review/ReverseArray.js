@@ -21,5 +21,18 @@ function revArr(arr) {
     }
 }
 
+/**
+ * gets a reversed copy of an array
+ * @param {Array} arr input array
+ * @returns {Array} reversed copy
+ */
+function revArrCp(arr) {
+    let res = new Array(arr.length);
+    for (let i = arr.length-1; i >= 0; --i) {
+        res[arr.length-i] = arr[i];
+    }
+    return res;
+}
+
 revArr(A);
 console.log(A);
