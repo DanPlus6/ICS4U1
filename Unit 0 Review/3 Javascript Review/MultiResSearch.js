@@ -1,3 +1,6 @@
+/**
+ * David & Ryan G
+ */
 'use strict';
 
 /**
@@ -21,7 +24,7 @@ function FindAll(arr, target) {
  * @param {Array} arr array of elements
  * @param {number[]} idxArr array of indices
  */
-function FindAll(arr, idxArr) {
+function printIdx(arr, idxArr) {
     let res = [];
     // loop thru provided indices to print elements
     for (const i of idxArr) {
@@ -30,3 +33,11 @@ function FindAll(arr, idxArr) {
 
     return res;
 }
+
+// testing
+const needle = Math.floor(Math.random() * 100) + 1;
+let haystack = new Array(20);
+for (let i=0;i<20;++i) haystack[i] = Math.floor(Math.random() * 100) + 1;
+
+console.log(FindAll(haystack,needle));
+printIdx(haystack,FindAll(haystack,needle));
