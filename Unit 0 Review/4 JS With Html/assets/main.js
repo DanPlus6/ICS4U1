@@ -30,7 +30,7 @@ function mkElem(el) { return document.createElement(el); }
  * @param {Element} p parent element
  * @param {Element[]} ch children elements
  */
-function addChild(p,ch) { for (const c in ch) p.appendChild(c); };
+function appendChildren(p,ch) { for (const c in ch) p.appendChild(c); };
 
 /**
  * Sorts an array of pairs in place by comparing first element in each pair using bubble sort
@@ -53,6 +53,30 @@ function pairSort(arr) {
     }
 }
 
+/**
+ * Removes an element in array in place
+ * @param {Array} arr the array
+ * @param {*} val element to remove
+ */
+function rmArr(arr,val) {
+    if (arr.length <= 1) arr = [];
+
+    let i = 0;
+    for (;i<arr.length; ++i) {
+        if (arr[i] == val) {
+            arr[i] = null;
+            break;
+        }
+    }
+    for (;i<arr.length; ++i) {
+        if (i != arr.length-1) {
+            arr[i] = arr[i+1];
+        } else {
+            arr.pop();
+        }
+    }
+}
+
 // ------ HTML targets ------ 
 const IPT_TASK = getTgt('ipt-task');
 const IPT_TPRIO = getTgt('ipt-task-prio');
@@ -69,13 +93,27 @@ const isNum = (n) => Number.isFinite(Number(n));
 */
 let tasks = [];
 
+/** 
+ * Callback to remove a task from html table and internal todo list
+ * @param {Event} ev
+ */
+function rmTask(ev) {
+    if (!ev.target.classList.contains('btn-rm-task')) return;
+    
+    const tableRow = ev.target.parentElement;
+    const taskData = JSON.parse(tableRow.getAttribute('task-data'));
+
+    TB_TASKS.removeChild(tableRow);
+    rmArr(tasks,taskData);
+}
+
 /** Print tasks internal tasks list to html todo list table */
 function printTasks() {
     TB_TASKS.innerHTML = `
         <tr>
             <th>Priority</th>
             <th>Task</th>
-            <th></th>
+            <th>Remove Task</th>
         </tr>
     `;
     
@@ -85,28 +123,14 @@ function printTasks() {
         const task = mkElem('td');
         const rmBtn = mkElem('button');
 
+        newRow.setAttribute('task-data',JSON.stringify(t));
         priority.innerHTML = t[0];
         task.innerHTML = t[1];
         listen(rmBtn,'click',rmTask);
 
-        addChild(newRow,priority);
-        TB_TASKS.innerHTML += `
-            <tr t='${p}'>
-                <td>${p[0]}</td>
-                <td>${p[1]}</td>
-                <td><button class='btn-rm-task'></button></td>
-            </tr>
-        `
+        appendChildren(newRow,[priority,task,rmBtn]);
+        TB_TASKS.appendChild(newRow);
     }
-}
-
-/** 
- * Callback to remove a task from html table and internal todo list
- * @param {Event} ev
- */
-function rmTask(ev) {
-    if (!ev.target.classList.contains('btn-rm-task')) return;
-    const parent = ev.target
 }
 
 /**
@@ -130,6 +154,7 @@ function addTask() {
     alert(`Task "${t}" added with priority of ${p}!`);
 
     if (tasks.length > 1) pairSort(tasks);
+    printTasks();
 }
 
 // ------ Callbacks ------ 
