@@ -26,6 +26,10 @@
         // Some stricter flags (disabled by default)
         "noUnusedLocals": false,
         "noUnusedParameters": false,
-        "noPropertyAccessFromIndexSignature": false
+        // G12 CS class configs:
+        "noPropertyAccessFromIndexSignature": false,
+        "outDir": "dist",
+        "sourceMap": true,
+        "strictPropertyInitialization": false,
     }
 }
