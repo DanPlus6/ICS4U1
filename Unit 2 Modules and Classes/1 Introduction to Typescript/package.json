@@ -1,0 +1,18 @@
+{
+  "name": "1-introduction-to-typescript",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "typecheck": "bun check"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "@types/node": "^26.6.5"
+  }
+}
