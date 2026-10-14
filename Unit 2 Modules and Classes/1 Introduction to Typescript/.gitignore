@@ -27,8 +27,8 @@ report.[0-9]_.[0-9]_.[0-9]_.[0-9]_.json
 .cache
 *.tsbuildinfo
 
-# IntelliJ based IDEs
+# IDEs and file explorer configs
+.vscode
 .idea
-
-# Finder (MacOS) folder config
+desktop.ini
 .DS_Store
