@@ -1,3 +1,11 @@
+// HTML targets
+const TXT_PRCP: HTMLInputElement = document.getElementById('txt-principal') as HTMLInputElement;
+const TXT_MTG: HTMLInputElement = document.getElementById('txt-mortgage') as HTMLInputElement;
+const TXT_AMT: HTMLInputElement = document.getElementById('txt-amortization') as HTMLInputElement;
+const BTN_CALC: HTMLButtonElement = document.getElementById('btn-calculate') as HTMLButtonElement;
+const P_RES: HTMLParagraphElement = document.getElementById('p-results') as HTMLParagraphElement;
+
+// Calculation functions
 /**
  * Calculates number of months in mortgage amortization period
  * @param y number of years
@@ -22,14 +30,12 @@ function calcEffMthRate(r: number) : number {
  * Gets monthly payment amount for a Canadian mortgage (semi-compounding)
  * @param r annual mortgage rate
  * @param p principal
- * @param y amortization period in months
+ * @param y amortization period in years
+ * @returns monthly mortgage payment amount
  */
-function calcEffMthPays(r: number, p: number, y: number): number {
+function calcEffMthPay(r: number, p: number, y: number): number {
     // pre-processing: convert into proper values for amortizaton formula
-    /**
-     * number of payment in the amortization period, for Canadian
-     * mortgages with semi-compounding interest this is just # of months
-     */
+    /** number of payment in the amortization period (months) */
     let n: number = calcNumPays(y);
     /** effective monthly interest rate */
     let i: number = calcEffMthRate(n);
@@ -42,4 +48,16 @@ function calcEffMthPays(r: number, p: number, y: number): number {
 
     return payment;
 }
+
+// Callbacks
+/** Calculates final mortgage */
+function btnCalc(e: Event): void {
+    const principal: number = Number(TXT_PRCP.value.trim());
+    const mortgageRate: number = Number(TXT_MTG.value.trim());
+    const amortizationPeriod: number = Number(TXT_AMT.value.trim());
+    const res: number = calcEffMthPay(mortgageRate,principal,amortizationPeriod);
+    P_RES.innerHTML = `Monthly Mortgage Payment: $${res}`;
+}
+BTN_CALC.addEventListener('click', btnCalc);
+
 
