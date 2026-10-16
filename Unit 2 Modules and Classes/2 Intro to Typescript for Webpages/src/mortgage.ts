@@ -49,15 +49,36 @@ function calcEffMthPay(r: number, p: number, y: number): number {
     return payment;
 }
 
+/**
+ * Calculates daily interest rate for Canadian mortgage
+ * @param r annual mortgage rate
+ * @returns converted daily interest rate
+ */
+function calcDailyIntRate(r: number): number {
+    return (1 + r/2)**(2/365) - 1;
+}
+
+/**
+ * Calculates daily amount of interest for Canadian mortgage
+ * @param r annual mortgage rate
+ * @param p principal remaining
+ * @returns daily interest amount
+ */
+function calcDailyIntAmt(r: number, p: number): number {
+    return calcDailyIntRate(r)*p;
+}
+
 // Callbacks
 /** Calculates final mortgage */
 function btnCalc(e: Event): void {
     const principal: number = Number(TXT_PRCP.value.trim());
-    const mortgageRate: number = Number(TXT_MTG.value.trim());
+    const annualRate: number = Number(TXT_MTG.value.trim());
     const amortizationPeriod: number = Number(TXT_AMT.value.trim());
-    const res: number = calcEffMthPay(mortgageRate,principal,amortizationPeriod);
-    P_RES.innerHTML = `Monthly Mortgage Payment: $${res}`;
+    const monthlyPayment: number = calcEffMthPay(annualRate,principal,amortizationPeriod);
+    const dailyPayment: number = calcDailyIntAmt(annualRate, principal);
+    P_RES.textContent = `
+    Monthly Mortgage Payment: $${monthlyPayment}\n
+    Daily Mortgage Payment: $${dailyPayment}
+    `;
 }
 BTN_CALC.addEventListener('click', btnCalc);
-
-
