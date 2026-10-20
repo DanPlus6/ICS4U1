@@ -68,9 +68,43 @@ function calcDailyIntAmt(r: number, p: number): number {
     return calcDailyIntRate(r)*p;
 }
 
+/**
+ * Calculates monthly mortgage payments needed to fully pay of mortgage
+ */
+function makeAmtSchd(r: number, p: number, y: number): string {
+    let amortizationSchedule : string = "";
+    let totalInterest : number = 0;
+
+    const fixedMonthlyPayment : number = calcEffMthPay(r, p, y);
+    const totalPayments : number = calcNumPays(y);
+    const monthlyRate: number = calcEffMthRate(r);
+
+    for (let i : number = 1; i <= totalPayments; i++){
+        let monthlyInterest : number = p * monthlyRate;
+        let principalPayment : number = fixedMonthlyPayment - monthlyInterest;
+        
+        if (p < principalPayment || i == totalPayments) {
+            principalPayment = p;
+        }
+
+        p -= principalPayment;
+        totalInterest += monthlyInterest;
+        
+        amortizationSchedule += `Month ${i}:<br>` +
+            `Principal Payment: $${principalPayment.toFixed(2)}<br>` +
+            `Monthly Interest: $${monthlyInterest.toFixed(2)}<br>` +
+            `Remaining Balance: $${Math.max(0, p).toFixed(2)}<br><br>`;
+    }
+    
+    amortizationSchedule += `Total Interest Paid: $${totalInterest.toFixed(2)};\n`;
+
+    return amortizationSchedule;
+}
+
+
 // Callbacks
 /** Calculates final mortgage */
-function btnCalc(e: Event): void {
+function btnCalc(): void {
     const principal: number = Number(TXT_PRCP.value.trim());
     const annualRate: number = Number(TXT_MTG.value.trim());
     const amortizationPeriod: number = Number(TXT_AMT.value.trim());
@@ -82,3 +116,12 @@ function btnCalc(e: Event): void {
     `;
 }
 BTN_CALC.addEventListener('click', btnCalc);
+
+/** Calculates schedule of payments to pay off mortgage */
+function btnAmtSchd(): void {
+    const p : number = Number(TXT_PRCP.value);
+    const r : number = Number(TXT_MTG.value);
+    const a : number = Number(TXT_AMT.value);
+
+    P_RES.innerHTML = makeAmtSchd(r, p, a);
+}
