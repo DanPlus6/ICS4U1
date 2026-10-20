@@ -3,6 +3,7 @@ const TXT_PRCP: HTMLInputElement = document.getElementById('txt-principal') as H
 const TXT_MTG: HTMLInputElement = document.getElementById('txt-mortgage') as HTMLInputElement;
 const TXT_AMT: HTMLInputElement = document.getElementById('txt-amortization') as HTMLInputElement;
 const BTN_CALC: HTMLButtonElement = document.getElementById('btn-calculate') as HTMLButtonElement;
+const BTN_SCHD: HTMLButtonElement = document.getElementById('btn-schedule') as HTMLButtonElement;
 const P_RES: HTMLParagraphElement = document.getElementById('p-results') as HTMLParagraphElement;
 
 // Calculation functions
@@ -110,7 +111,7 @@ function btnCalc(): void {
     const amortizationPeriod: number = Number(TXT_AMT.value.trim());
     const monthlyPayment: number = calcEffMthPay(annualRate,principal,amortizationPeriod);
     const dailyPayment: number = calcDailyIntAmt(annualRate, principal);
-    P_RES.textContent = `
+    P_RES.textContent = `<br>
     Monthly Mortgage Payment: $${monthlyPayment}\n
     Daily Mortgage Payment: $${dailyPayment}
     `;
@@ -125,3 +126,4 @@ function btnAmtSchd(): void {
 
     P_RES.innerHTML = makeAmtSchd(r, p, a);
 }
+BTN_SCHD.addEventListener('click', btnAmtSchd);
