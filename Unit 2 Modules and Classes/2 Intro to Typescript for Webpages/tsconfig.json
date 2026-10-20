@@ -16,9 +16,7 @@
         ],
         // Bundler mode
         "moduleResolution": "bundler",
-        "allowImportingTsExtensions": true,
         "verbatimModuleSyntax": true,
-        "noEmit": true,
         // Best practices
         "strict": true,
         "skipLibCheck": true,
@@ -30,8 +28,11 @@
         "noUnusedParameters": false,
         "noPropertyAccessFromIndexSignature": false,
         // G12 CS configs for web:
+        "rewriteRelativeImportExtensions": true,
+        "allowImportingTsExtensions": true,
         "rootDir": "./src",
         "outDir": "./dist",
+        "noEmit": false,
         "sourceMap": true,
         "strictPropertyInitialization": false
     },
