@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="assets/styles.css">
+
+    <title>Cryptography</title>
+</head>
+<body>
+<div class="content">
+        <h1>Theoretical Computer Science - Cryptography</h1>
+
+        <div class="section">
+            <h2>What is this theoretical computer science topic about?</h2>
+            <p style="text-indent: 40px;">
+                Cryptography is the study of mathematics and algorithms for finding methods to protect information and communications from unauthorized access or usage.
+            </p>
+
+            <p style="text-indent: 40px;">
+                The main practice of cryptography is based on the following fundamental principles:
+            </p>
+
+            <li><strong>Confidentiality:</strong> ensuring that information can only be accessed by intended recipients and not anyone else.</li>
+            <li><strong>Integrity:</strong> ensuring that encrypted information is not modified in storage or in transit between sender and intended recipient (or at least cannot be modified without detection of alterations).</li>
+            <li><strong>Non-repudiation:</strong> ensuring that the sender of encrypted information (such as an email) cannot deny the intention to send said information.</li>
+            <li><strong>Authentication:</strong> confirming the identity of the sender and receiver, and the origin and destination of the information.</li>
+
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/50PrveNht7g" title="What is Cryptography and Why is it Important?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <p style="text-indent: 40px;">
+                Modern cryptography involves the processes of encryption and decryption. Encryption is a process where readable information, known as plaintext, is scrambled and transformed into an unreadable form known as ciphertext, while decryption, the unscrambling of scrambled ciphertext back into readable plaintext information.
+            </p>
+
+            <p style="text-indent: 40px;">
+                There are two main types of encryption, symmetric and asymmetric encryption. In symmetric encryption, the same key is used to encrypt and decrypt data. In asymmetric encryption, a pair of keys are used, a public and private key. The public key is public and accessible by anyone to encrypt the data, while the private key is held by only authorized users to decrypt the data. The key part (no pun intended) is that the public key cannot be used to find the private key.
+            </p>
+            <img src="assets/img/crypto.png">
+        </div>
+
+        <div class="section">
+            <h2>What are some examples of how the topic has been applied to specific software?</h2>
+            <p style="text-indent: 40px;">
+                Today, cryptography is an essential cybersecurity tool for protecting one's digital data and information from access by malicious threat actors. Said information may be chat messages, online calls, digital wallets, passwords, browsing traffic, or files and documents stored in the cloud. As such, many (though unfortunately not all) software applications and online services employ some form of encryption to protect our data.
+            </p>
+            <ul>
+                <h4>Examples include:</h4>
+                <li>WhatsApp and Keybase use end-to-end encryption, a form of asymmetric encryption to encrypt chat messages and shared files</li>
+                <li>Chrome, Firefox and other browsers use the HTTPS protocol, which uses asymmetric encryption to encrypt information such as login credentials that are exchanged between your browser and the website</li>
+                <li>Windows 11's BitLocker feature uses AES encryption, a form of symmetric encryption to encrypt all the data on a computer's drive so it cannot be accessed even if your Windows login password or hard drive was stolen</li>
+            </ul>
+        </div>
+
+        <hr>
+        <div class="section">
+            <h2>Sources</h2>
+            <ul class="sources">
+                <li>What is cryptography? (2025, November 17). <a href="https://www.ibm.com/think/topics/cryptography" target="_blank" rel="noopener noreferrer">https://www.ibm.com/think/topics/cryptography</a></li>
+                <li>What is Cryptography? Definition, Importance, Types | Fortinet. (n.d.). Fortinet. <a href="https://www.fortinet.com/resources/cyberglossary/what-is-cryptography" target="_blank" rel="noopener noreferrer">https://www.fortinet.com/resources/cyberglossary/what-is-cryptography</a></li>
+                <li>What is End-to-End encryption? | IBM. (2025, November 17). <a href="https://www.ibm.com/think/topics/end-to-end-encryption" target="_blank" rel="noopener noreferrer">https://www.ibm.com/think/topics/end-to-end-encryption</a></li>
+                <li>About end-to-end encryption | WhatsApp Help Center. (n.d.). <a href="https://faq.whatsapp.com/820124435853543" target="_blank" rel="noopener noreferrer">https://faq.whatsapp.com/820124435853543</a></li>
+                <li>Keybase Book. (n.d.). <a href="https://book.keybase.io/security" target="_blank" rel="noopener noreferrer">https://book.keybase.io/security</a></li>
+                <li>Cloudflare. (n.d.). What is HTTPS? | Learning Center. <a href="https://www.cloudflare.com/learning/ssl/what-is-https/" target="_blank" rel="noopener noreferrer">https://www.cloudflare.com/learning/ssl/what-is-https/</a></li>
+                <li>Officedocspr. (n.d.). BitLocker Overview. Microsoft Learn. <a href="https://learn.microsoft.com/en-us/windows/security/operating-system-security/data-protection/bitlocker/" target="_blank" rel="noopener noreferrer">https://learn.microsoft.com/en-us/windows/security/operating-system-security/data-protection/bitlocker/</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
