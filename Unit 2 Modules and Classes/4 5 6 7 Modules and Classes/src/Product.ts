@@ -164,6 +164,6 @@ class Product {
         console.log(`${this._sku} Quantity was shrunk by ${toShrink}`);
     }
 
-}
+};
 
 export {Product};
