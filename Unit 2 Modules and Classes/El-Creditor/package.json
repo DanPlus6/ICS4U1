@@ -1,0 +1,21 @@
+{
+  "name": "credit-card-project",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@types/live-server": "^1.2.3",
+    "csv-parser": "^3.2.0",
+    "live-server": "^1.2.2",
+    "typescript": "^5.9.3"
+  },
+  "devDependencies": {
+    "@types/node": "^25.2.3"
+  }
+}

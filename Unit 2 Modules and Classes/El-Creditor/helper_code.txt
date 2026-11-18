@@ -1,0 +1,179 @@
+//please god only run this once, it's so bad. realisitcally we only need to do this once since we saved it in hard memory so it's fine
+// make a map that goes [country][bank] => [BIN that meets requirements]
+
+/**
+function constructCountryAndBankToBIN(){
+    //create a hashmap of Country and Bank to Bin numbers
+    const countryAndBankToBIN = new Map<string, string[]>();
+    //create CSV read stream, reading bin-list-data.csv
+    fs.createReadStream('bin-list-data.csv')
+    .pipe(csv())
+    // for every row of data, we look at the BIN, issuer and isoCode2 and define the key as isoCode2 + Issuer seperated by a space
+    .on('data', (row) =>{
+        const {BIN, Issuer, isoCode2} = row
+        const key= isoCode2+' '+ Issuer;
+        // we create an exist variable to avoid pushing a value into an undefined key or value
+        const exist = countryAndBankToBIN.get(key)
+        // if the value doesn't exist we set a key value pair in the map
+        if (!exist){
+            countryAndBankToBIN.set(key, [BIN])
+        }
+        // otherwise we push the value into the number array because that must mean a key value pair must already exist
+        else {
+            exist.push(String(BIN))
+        }
+    })
+    //upon ending the csv reading we turn the map into an object, then create a json file with the stringified object
+    .on("end", () => {
+        const obj = Object.fromEntries(countryAndBankToBIN);
+        fs.writeFileSync(
+            "CBB.json",
+            JSON.stringify(obj, null, 2),
+            "utf-8"
+        )
+        console.log('I did the thing')
+    })
+}
+
+*/
+
+/**
+ * helper function that makes the BIN search record object and BBC JSON file
+ * -preconditions
+ * the JSON file is different or doesn't exists which doesn't allow for us to create the record
+ * the "bin-list-data.csv" must exist for the function to read it
+ * -postconditions
+ * the BBC JSON file will be created and can be called later for and since we are writing in hard
+ * memory, the function returns nothing
+ */
+//this function should be commented out since it's a helper that is run to create the record
+// function constructBINSearchObj(){
+//     //create a hashmap of BIN to country and bank
+//     const BIN_To_Country_And_Bank = new Map<string, string>();
+//     //create CSV read stream, reading bin-list-data.csv
+//     fs.createReadStream('bin-list-data.csv')
+//     .pipe(csv())
+//     // for every row of data, we look at the BIN, issuer and isoCode2
+//     .on('data', (row) =>{
+//         let {isoCode2, Issuer, BIN} = row
+//         // if we can't find the issuer we define it as unknown
+//         if (Issuer == ""){
+//             Issuer = "Unknown";
+//         }
+//          // if we can't find the isocode we define it as unknown
+//         if (isoCode2 == ""){
+//             isoCode2 = "Unknown";
+//         }
+//         //we define key as BIN and val as isocode and issuer seperated by a space
+//         const key: string = BIN
+//         const val: string = isoCode2+' '+ Issuer;
+//         // we set the
+//         BIN_To_Country_And_Bank.set(key, val)
+
+//     })
+//     //upon finishing the reading, we create a map object to translate BIN to country and bank value
+//     .on("end", () => {
+//         const obj = Object.fromEntries(BIN_To_Country_And_Bank);
+//         fs.writeFileSync(
+//             "BBC.json",
+//             JSON.stringify(obj, null, 2),
+//             "utf-8"
+//         )
+//         console.log('I did the thing')
+//     })
+// }
+
+//
+function tempArrayAndCountryArrayBuilder(){
+    //create array for all countries and hashmap of string, key: country to string array, value: valid bank within country
+    const allCountries: string[] = [];
+    const Country_To_Bank: Map<string, string[]> = new Map<string, string[]>()
+
+    //create CSV read stream, reading bin-list-data.csv
+    fs.createReadStream('bin-list-data.csv')
+    .pipe(csv())
+    // for every row of data, we look at the isoCode2 and issuer
+    .on('data', (row) =>{
+        const {isoCode2, Issuer} = row
+        //define exist variable with either type string array if it exists or undefined if it doesn't
+        const exist: string[] | undefined = Country_To_Bank.get(isoCode2)
+        // if the key value pair doesn't exist we define the KV (key value) pair we also filter for no name countries and banks
+        if (!exist && Issuer != "" && isoCode2 != ""){
+            Country_To_Bank.set(isoCode2, [Issuer])
+        }
+        // otherwise if a KV pair exists and we don't already have the specific issuer in the hashmap value array we add the issuer
+        // into the string array also we filter for no name banks
+        else if(exist && !(exist.includes(Issuer)) && Issuer != ""){
+            exist.push(Issuer)
+        }
+        // if the country doesn't exist in the country array, we add the country to the string array we also filter for no name countries
+        if(!(allCountries.includes(isoCode2)) && isoCode2 != ""){
+            allCountries.push(isoCode2);
+        }
+    })
+    //Write both array and hashmap into objects so we can recall and use them later
+    .on("end", () => {
+        const obj = Object.fromEntries(Country_To_Bank);
+        fs.writeFileSync(
+            "Banks.json",
+            JSON.stringify(obj, null, 2),
+            "utf-8"
+        )
+        fs.writeFileSync(
+            "Countries.json",
+            JSON.stringify(allCountries, null, 2),
+            "utf-8"
+        )
+        console.log('I did the thing')
+    })
+}
+/**
+ * This function is a temporary function that should be commented out. we use this to create array of all countries and hashmap
+ * of all valid banks in any country
+ *
+//
+function tempArrayAndCountryArrayBuilder(){
+    //create array for all countries and hashmap of string, key: country to string array, value: valid bank within country
+    const allCountries: string[] = [];
+    const Country_To_Bank: Map<string, string[]> = new Map<string, string[]>()
+
+    //create CSV read stream, reading bin-list-data.csv
+    fs.createReadStream('bin-list-data.csv')
+    .pipe(csv())
+    // for every row of data, we look at the isoCode2 and issuer
+    .on('data', (row) =>{
+        const {isoCode2, Issuer} = row
+        //define exist variable with either type string array if it exists or undefined if it doesn't
+        const exist: string[] | undefined = Country_To_Bank.get(isoCode2)
+        // if the key value pair doesn't exist we define the KV (key value) pair we also filter for no name countries and banks
+        if (!exist && Issuer != "" && isoCode2 != ""){
+            Country_To_Bank.set(isoCode2, [Issuer])
+        }
+        // otherwise if a KV pair exists and we don't already have the specific issuer in the hashmap value array we add the issuer
+        // into the string array also we filter for no name banks
+        else if(exist && !(exist.includes(Issuer)) && Issuer != ""){
+            exist.push(Issuer)
+        }
+        // if the country doesn't exist in the country array, we add the country to the string array we also filter for no name countries
+        if(!(allCountries.includes(isoCode2)) && isoCode2 != ""){
+            allCountries.push(isoCode2);
+        }
+    })
+    //Write both array and hashmap into objects so we can recall and use them later
+    .on("end", () => {
+        const obj = Object.fromEntries(Country_To_Bank);
+        fs.writeFileSync(
+            "Banks.json",
+            JSON.stringify(obj, null, 2),
+            "utf-8"
+        )
+        fs.writeFileSync(
+            "Countries.json",
+            JSON.stringify(allCountries, null, 2),
+            "utf-8"
+        )
+        console.log('I did the thing')
+    })
+}
+
+*/

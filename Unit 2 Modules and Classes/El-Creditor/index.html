@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                margin: 0;
+                background-color: slategrey;
+            }
+            .font {
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+            .center {
+                transform: translateX(-50%);
+                position: absolute;
+                left: 50%;
+            }
+            #main-container {
+                display: flex;
+                gap: 10px;
+                top: 25%;
+            }
+            .button {
+                border: none;
+                color: white;
+                background-color: cadetblue;
+                padding: 15px 20px;
+                font-size: 20px;
+                cursor: pointer;
+            }
+            .credit-card-shape {
+                width: 400px;
+                aspect-ratio: 1.586 / 1;
+                border-radius: 15px;
+                padding: 20px;
+                box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                color: white;
+            }
+
+            .search-dropdown-bar {
+                position: relative;
+            }
+
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: green;
+                min-width: 130px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                padding: 12px 16px;
+            }
+
+            .dropdown-hover {
+                display: block;
+            }
+            .dropdown-bar{
+                background-color: #13c6dddc;
+                color: white;
+                font-size: 20px;
+                border: none;
+            }
+            #saved-list {
+                white-space: pre-line;
+            }
+            .disabled-input {
+              background-color: #e0e0e0;
+              color: #777;
+              cursor: not-allowed;
+            }
+            
+        </style>
+    </head>
+
+    <body>
+        <div id="main-area" style="display: block;">
+            <h1 class="font center" style="font-size: 4rem; top: 10%;">Credit C. Inc</h1>
+            <div id="main-container" class="center" style="top: 30%; display: flex;">
+                <input id="CC-num" class="font" style="font-size: 1rem;" type="number" placeholder="CC-number">
+                <button onclick="validateHelper();" class="font button">Validate Credit Card</button>
+                <button onclick="searchHelper();" class="font button">Search Credit Card</button>
+                <button onclick="displayMenu('customize');" class="font button">Customization</button>
+                <button onclick="generateHelper();" class="font button">Generate Credit Card</button>
+                <button onclick="cancelButton();" class="font button">Cancel Selection</button>
+                <input class="search-dropdown-bar" id="countryInput" type="text" placeholder="Country">
+                <input class="search-dropdown-bar disabled-input" id="bankInput" type="text" placeholder="Bank" disabled>
+                
+            
+                
+            </div>
+            
+            <div style="position: absolute; top: 50%; right: 5%; max-width: 30%; min-width: 30%; max-height: 35%;">
+                <ul id="searchList" class="hidden font" style="cursor: pointer" ></ul>
+            </div>
+
+                
+            <div  style="position: absolute; top: 45%; left: 10%; max-width: 30%; min-width: 30%; ">
+                <p id="searchOutput"></p>
+            </div>
+            
+            <div id="credit-card" class="credit-card-shape font center" style="position: absolute; top: 45%; background-color: grey;">
+                <div style="font-size: 1.2rem; letter-spacing: 2px;">Bank Name</div>
+                
+                <p id="card-number-display" style="font-size: 1.5rem; text-align: center;">
+                    **** **** **** ****
+                </p>
+                
+                <div style="display: flex; justify-content: space-between;">
+                    <p>CARDHOLDER NAME</p>
+                </div>
+            </div>
+        </div>
+        
+        <div id="save-menu" style="display: none; text-align: center; position: absolute; top: 50%; left: 10%; background-color: darkblue; width: 250px; height: 150px;">
+            <h3 class="font" style="color: white;">Do you want to save this number?</h3>
+            <button onclick="displayMenu('input');" class="button">Yes</button>
+            <button onclick="resetMenu();" class="button">No</button>
+        </div>
+        
+        <div id="input-area" class="center" style="display: none; text-align: center; top: 40%;">
+            <h3 class="font" style="color: white;">Enter Username</h3>
+            <input type="text" id="username-input" class="font" style="font-size: 1rem;" placeholder="Enter Username">
+            <button onclick="confirmSave();" class="button">Register</button>
+        </div>
+        
+        <div id="view-area" style="text-align: center; display: none;">
+            <h1 class="font center" style="color: white; top: 5%;">Saved Cards:</h1>
+            <p id="saved-list" class="font center" style="color: white; top: 10%;"></p>
+        </div>
+        
+        <div id="customize-area" style="display: none;">
+            <h1 class="font center" style="color: white; top: 15%;">Pick Credit Card Colour:</h1>
+            <input type="color" id="colour-picker" class="center" style="width: 400px; height: 400px; top: 35%;">
+            <button onclick="chooseColour();" class="button center" style="top: 25%;">Select Colour</button>
+        </div>
+        
+        <button onclick="viewCards();" class="button center" style="position: absolute; bottom: 10%;">View Saved Cards</button>
+    </body>`
+    <script src="./dist/index.js"></script>
+</html>
