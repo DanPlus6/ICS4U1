@@ -1,4 +1,4 @@
-import type { Shape2D } from "./Shape2D";
+import { type Shape2D } from "./Shape2D";
 
 class Circle implements Shape2D {
     private _radius: number;
