@@ -8,13 +8,13 @@ class Square implements Shape2D {
      * @param s length of side
      */
     constructor(s: number) {
-
+        this.side = s;
     }
 
     calculateArea(): number {
         return this.side*this.side;
     }
     calculatePerimeter(): number {
-        return side*4;
+        return this.side*4;
     }
 }
