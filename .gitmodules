@@ -1,3 +1,6 @@
 [submodule "Unit 2 Modules and Classes/P1 Credit Card Validation and Generation"]
 	path = Unit 2 Modules and Classes/P1 Credit Card Validation and Generation
 	url = https://github.com/DanPlus6/ICS4U1-U2P1.git
+[submodule "Unit 3 Object Oriented Programming and Graphics/P1 Tower Defense Game"]
+	path = Unit 3 Object Oriented Programming and Graphics/P1 Tower Defense Game
+	url = https://github.com/DanPlus6/ICS4U1-U3P1.git
