@@ -1,6 +1,6 @@
-import type { Shape2D } from "./Shape2D";
+import type { IShape2D } from "./IShape2D.ts";
 
-class RightTriangle implements Shape2D {
+class RightTriangle implements IShape2D {
     private _height: number;
     private _width: number;
 

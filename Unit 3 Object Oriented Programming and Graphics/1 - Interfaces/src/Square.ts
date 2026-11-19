@@ -1,6 +1,6 @@
-import type { Shape2D } from "./Shape2D";
+import type { IShape2D } from "./IShape2D.ts";
 
-class Square implements Shape2D {
+class Square implements IShape2D {
     private side: number;
     
     /**

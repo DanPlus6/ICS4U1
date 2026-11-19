@@ -1,6 +1,6 @@
-import { type Shape2D } from "./Shape2D";
+import { type IShape2D } from "./IShape2D.ts";
 
-class Circle implements Shape2D {
+class Circle implements IShape2D {
     private _radius: number;
 
     /**
