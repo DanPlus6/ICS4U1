@@ -1,7 +1,7 @@
 import { randomInt } from './randomInt.ts';
 import { type IPoint } from './IPoint.ts';
 
-export class Point implements IPoint {
+export class RandomPoint implements IPoint {
     x: number;
     y: number;
 
