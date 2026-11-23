@@ -1,19 +1,21 @@
 import { type IPoint } from './IPoint.ts';
 
 export class Point implements IPoint {
-    x: number;
-    y: number;
+    readonly x: number;
+    readonly y: number;
 
-    distanceTo(p2: IPoint): number {
-        const distX: number = p2.x-this.x;
+    constructor(x: number, y: number) {
+        this.x = x;
+        this.y = y;
+    }
+
+    getDistTo(p2: IPoint): number {
+        const distX: number = p2.x -this.x;
         const distY: number = p2.y-this.y;
 
         return Math.sqrt(distX*distX + distY*distY);
     }
 
-    move(nx: number, ny: number): void {
-        this.x = nx;
-        this.y = ny;
-    }
+    move(): void {}
 
 }

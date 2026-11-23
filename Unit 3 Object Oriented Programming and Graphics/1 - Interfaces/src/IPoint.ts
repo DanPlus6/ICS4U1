@@ -3,8 +3,8 @@ export interface IPoint {
     y: number;
 
     /** Calculates distance from this point to another point */
-    distanceTo(p2: IPoint): number;
+    getDistTo(p2: IPoint): number;
 
     /** Changes position of this point */
-    move(nx: number, ny: number): void;
+    move(): void;
 }
