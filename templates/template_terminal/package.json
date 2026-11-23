@@ -1,0 +1,19 @@
+{
+    "name": "1---interfaces",
+    "module": "index.ts",
+    "type": "module",
+    "private": true,
+    "scripts": {
+        "typecheck": "bun check",
+        "build": "bunx tsc"
+    },
+    "devDependencies": {
+        "@types/bun": "latest"
+    },
+    "peerDependencies": {
+        "typescript": "^7"
+    },
+    "dependencies": {
+        "@types/node": "^26.6.6"
+    }
+}
