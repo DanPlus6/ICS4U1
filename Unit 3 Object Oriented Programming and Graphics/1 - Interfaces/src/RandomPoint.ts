@@ -21,4 +21,8 @@ export class RandomPoint implements IPoint {
         this.x = randomInt(0,500);
         this.y = randomInt(0,500);
     }
+    
+    printPoint(): void {
+        console.log(`${this.x} {this.y}`);
+    }
 }

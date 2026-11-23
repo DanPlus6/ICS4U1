@@ -23,5 +23,4 @@ class RightTriangle implements IShape2D {
     calculatePerimeter(): number {
         return this._height + this._width + Math.sqrt(this._height*this._height + this._width+this._width);
     }
-    
 }

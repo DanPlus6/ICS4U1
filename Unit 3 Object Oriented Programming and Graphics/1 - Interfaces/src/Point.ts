@@ -18,4 +18,7 @@ export class Point implements IPoint {
 
     move(): void {}
 
+    printPoint(): void {
+        console.log(`${this.x} {this.y}`);
+    }
 }

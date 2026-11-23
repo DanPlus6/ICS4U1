@@ -7,4 +7,7 @@ export interface IPoint {
 
     /** Changes position of this point */
     move(): void;
+
+    /** Prints location of point to terminal */
+    printPoint(): void;
 }
