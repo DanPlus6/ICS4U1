@@ -1,11 +1,16 @@
 export class Canvas {
     static #inst: Canvas;
-    readonly canvas: HTMLCanvasElement;
+    readonly cv: HTMLCanvasElement;
     readonly ctx: CanvasRenderingContext2D;
+    readonly h: number;
+    readonly w: number;
 
     private constructor(canvasId: string) {
-        this.canvas = document.getElementById(canvasId) as HTMLCanvasElement;
-        this.ctx = this.canvas.getContext('2d') as CanvasRenderingContext2D;
+        this.cv = document.getElementById(canvasId) as HTMLCanvasElement;
+        this.ctx = this.cv.getContext('2d') as CanvasRenderingContext2D;
+
+        this.h = this.cv.clientHeight;
+        this.w = this.cv.clientWidth;
     }
 
     /**
@@ -18,6 +23,4 @@ export class Canvas {
 
         return Canvas.#inst;
     }
-
-    
 }
