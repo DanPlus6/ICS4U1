@@ -1,7 +1,7 @@
-import { randomInt } from './randomInt.ts';
-import { type IPoint } from './IPoint.ts';
+import { randomInt } from '../utils/randomInt.ts';
+import { type Point2D } from '../types/Point2D.ts';
 
-export class RandomPoint implements IPoint {
+export class RandomPoint implements Point2D {
     x: number;
     y: number;
 
@@ -10,7 +10,7 @@ export class RandomPoint implements IPoint {
         this.y = randomInt(0,500);
     }
 
-    getDistTo(p2: IPoint): number {
+    getDistTo(p2: Point2D): number {
         const distX: number = p2.x - this.x;
         const distY: number = p2.y - this.y;
 

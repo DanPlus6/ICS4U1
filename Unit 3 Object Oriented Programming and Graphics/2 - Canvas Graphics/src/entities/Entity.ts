@@ -1,4 +1,4 @@
-import { Point } from "./Point";
+import { Point } from "../geometry/Point";
 
 export class Entity {
     private _pos: Point;

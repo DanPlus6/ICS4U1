@@ -1,7 +1,7 @@
-import { randomInt } from './randomInt.ts';
-import { Point } from './Point.ts';
-import { RandomPoint } from './RandomPoint.ts';
-import { IPoint } from './IPoint.ts';
+import { randomInt } from '../utils/randomInt.ts';
+import { Point } from '../geometry/Point.ts';
+import { RandomPoint } from '../geometry/RandomPoint.ts';
+import { IPoint } from '../lib/IPoint.ts';
 
 export class Particles {
     private origin: Point;

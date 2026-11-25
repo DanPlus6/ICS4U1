@@ -1,6 +1,6 @@
-import { type IShape2D } from "./IShape2D.ts";
+import { type Shape2D } from "../types/Shape2D.ts";
 
-class Rectangle implements IShape2D {
+class Rectangle implements Shape2D {
     private length: number;
     private width: number;
 
@@ -9,11 +9,11 @@ class Rectangle implements IShape2D {
         this.width = width;
     }
 
-    calculateArea(): number {
+    get area(): number {
         return this.length * this.width;
     }
 
-    calculatePerimeter(): number {
+    get perimeter(): number {
         return (this.length + this.width) * 2;
     }
 }

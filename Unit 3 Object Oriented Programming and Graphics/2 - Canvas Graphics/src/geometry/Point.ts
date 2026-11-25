@@ -1,6 +1,6 @@
-import { type IPoint } from './IPoint.ts';
+import { type Point2D } from '../types/Point2D.ts';
 
-export class Point implements IPoint {
+export class Point implements Point2D {
     x: number;
     y: number;
 
@@ -9,7 +9,7 @@ export class Point implements IPoint {
         this.y = y;
     }
 
-    getDistTo(p2: IPoint): number {
+    getDistTo(p2: Point2D): number {
         const distX: number = p2.x -this.x;
         const distY: number = p2.y-this.y;
 

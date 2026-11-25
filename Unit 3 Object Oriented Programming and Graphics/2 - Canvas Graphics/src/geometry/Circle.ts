@@ -1,6 +1,6 @@
-import { type IShape2D } from "./IShape2D.ts";
+import { type Shape2D } from "../types/Shape2D.ts";
 
-class Circle implements IShape2D {
+class Circle implements Shape2D {
     private _radius: number;
 
     /**
@@ -17,11 +17,11 @@ class Circle implements IShape2D {
      */
     get r(): number { return this._radius; }
 
-    calculateArea(): number {
+    get area(): number {
         return Math.PI*this._radius*this._radius;
     }
 
-    calculatePerimeter(): number {
+    get perimeter(): number {
         return 2*Math.PI*this._radius;
     }
     
