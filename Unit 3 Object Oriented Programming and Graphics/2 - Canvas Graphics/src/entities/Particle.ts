@@ -1,7 +1,7 @@
 import { randomInt } from '../utils/randomInt.ts';
 import { Point } from '../geometry/Point.ts';
 import { RandomPoint } from '../geometry/RandomPoint.ts';
-import { IPoint } from '../lib/IPoint.ts';
+import { type Point2D } from '../types/Point2D.ts';
 
 export class Particles {
     private origin: Point;
@@ -26,7 +26,7 @@ export class Particles {
         this.genParticle();
     }
 
-    getDistTo(p2: IPoint): number {
+    getDistTo(p2: Point2D): number {
         const distX: number = p2.x - this.origin.x;
         const distY: number = p2.y - this.origin.y;
 
