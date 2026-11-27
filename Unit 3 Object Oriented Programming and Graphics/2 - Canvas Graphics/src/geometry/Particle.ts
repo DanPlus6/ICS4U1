@@ -1,6 +1,6 @@
 import { randomInt } from '../utils/randomInt.ts';
-import { Point } from '../geometry/Point.ts';
-import { RandomPoint } from '../geometry/RandomPoint.ts';
+import { Point } from './Point.ts';
+import { RandomPoint } from './RandomPoint.ts';
 import { type Point2D } from '../types/Point2D.ts';
 
 export class Particles {

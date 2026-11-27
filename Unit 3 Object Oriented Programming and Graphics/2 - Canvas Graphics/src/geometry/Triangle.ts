@@ -1,4 +1,4 @@
-import type { Shape2D } from "../types/Shape2D.ts";
+import type { Shape2D } from "../types/inc_RenderInfo2D.ts";
 
 class Triangle implements Shape2D {
     private s: number;

@@ -1,4 +1,4 @@
-import { type Shape2D } from "../types/Shape2D.ts";
+import { type Shape2D } from "../types/inc_RenderInfo2D.ts";
 
 class Rectangle implements Shape2D {
     private length: number;
